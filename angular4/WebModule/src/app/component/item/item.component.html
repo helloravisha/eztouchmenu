@@ -1,20 +1,36 @@
-<div class="container"><br />
-  <div class="row text-center fh5co-heading row-padded">
-    <div class="col-md-8 col-md-offset-2">
-      <h2 class="heading to-animate">Dishes</h2>
-    </div>
-    <ul class="col-lg-12 col-md-12 col-sm-12">
-      <a  routerLink="/createItem"><li class="btn btn-primary">NEW DISH</li></a>
-    </ul>
-  </div>
-  <ng-template ngIf="exists(data)" && *ngFor=" let item of data">
-    <div class="fh5co-food-desc">
-      <h3 innerHTML="{{item.name}}"></h3>
-      <p innerHTML="{{item.description}}"></p>
-      <div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">
+<app-navigation></app-navigation>
+<div id="fh5co-menus" data-section="menu">
+  <div class="container"><br />
+    <div class="row text-center fh5co-heading row-padded">
+      <div class="col-md-8 col-md-offset-2">
+        <h2 class="heading to-animate">Dishes</h2>
       </div>
-      <a  routerLink="/updateItem"><li class="btn btn-primary">UPDATE</li></a>
-      <a  routerLink="/deleteItem"><li class="btn btn-primary">DELETE</li></a>
+      <ul class="col-lg-12 col-md-12 col-sm-12">
+        <a  routerLink="/createItem"><li class="btn btn-primary">NEW DISH</li></a>
+      </ul>
     </div>
-  </ng-template>
+
+      <ng-template ngIf="exists(data)" && *ngFor=" let item of data">
+        <div class="fh5co-food-menu to-animate-2">
+          <ul>
+          <li>
+            <div class="fh5co-food-desc">
+              <figure>
+                <img src="{{item.imagepath}}" class="img-responsive" alt="Dish image">
+              </figure>
+              <div>
+                <h3 innerHTML="{{item.name}}"></h3>
+                <p innerHTML="{{item.description}}"></p>
+              </div>
+              <div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">
+                <a  routerLink="/updateItem" class="btn btn-primary">UPDATE</a>
+                <a  routerLink="/deleteItem" class="btn btn-primary">DELETE</a>
+              </div>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </ng-template>
+
+  </div>
 </div>

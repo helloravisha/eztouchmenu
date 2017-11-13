@@ -32,8 +32,8 @@ import { DeleteItemComponent } from './component/item/deleteitem.component';
 import { UpdateItemComponent } from './component/item/updateitem.component';
 import { OrderComponent } from './component/order/order.component';
 import { Respond2orderComponent } from './component/order/respond2order.component';
-import {CreateMenuComponent} from './component/menu/createmenu.component';
-
+import { CreateMenuComponent } from './component/menu/createmenu.component';
+import { NavigationComponent } from './component/navigation/navigation.component'
 
 @NgModule({
   declarations: [
@@ -58,7 +58,8 @@ import {CreateMenuComponent} from './component/menu/createmenu.component';
     ItemComponent,
     CreateItemComponent,
     UpdateItemComponent,
-    DeleteItemComponent
+    DeleteItemComponent,
+    NavigationComponent
 
   ],
   imports: [
