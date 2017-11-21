@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezmenutouch">
+
+    <uses-sdk android:minSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".util.AppController"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".activity.TableActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="your-own-uri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MyOrders" />
+        <activity
+            android:name=".activity.DetailedDishActivity"
+            android:label="@string/title_activity_detailed_movie" />
+        <activity
+            android:name=".activity.DetailedDishTabActivity"
+            android:label="@string/title_activity_sportify_tab" />
+
+        <provider
+            android:name=".contentprovider.MovieContentProvider"
+            android:authorities="com.ezmenutouch.contentprovider.MovieContentProvider"
+            android:exported="true"
+            android:multiprocess="true" />
+
+        <activity android:name=".activity.MenuActivity" />
+        <activity android:name=".activity.DashboardActivity"></activity>
+    </application>
+
+</manifest>

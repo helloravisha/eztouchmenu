@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="android.ezmenutouch.SportifySteamer" >
+    <item android:id="@+id/popular" android:title="Home"
+        android:orderInCategory="100" android:showAsAction="never" android:name="android:textColorPrimary">@android:color/white</item>
+</menu>
