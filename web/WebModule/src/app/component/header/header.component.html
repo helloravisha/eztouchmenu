@@ -1,9 +1,14 @@
 <div class="header_div">
 <div class="marginContent">
-    <app-header1></app-header1>
-    <!--<app-header-admin></app-header-admin>-->
+  <div class="col-lg-3 col-md-3 col-sm-3 padding0">
+    <div class="logo_div">
+      <a routerLink="/">
+        <h1 class="heading to-animate"><i>Ezmenutouch</i></h1>
+      </a>
+    </div>
+  </div>
+    <ng-template *ngIf="LoginUser == 'Kitchen'"><app-header1 ></app-header1></ng-template>
+    <ng-template *ngIf="LoginUser == 'Supervisor'"><app-header-admin></app-header-admin></ng-template>
 </div>
-  <div class="clear"></div>
-  <div class="large_gap"></div>
 </div>
 

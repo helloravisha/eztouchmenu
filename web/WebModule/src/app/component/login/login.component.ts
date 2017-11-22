@@ -1,13 +1,12 @@
 import {Component, OnInit, Inject} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
-import {Routes,RouterModule, Router} from '@angular/router';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {Routes, RouterModule, Router} from '@angular/router';
 import {routing} from './../../app.routing';
-import {LoginComponentInterface} from "./LoginComponentInterface";
-import {LoginTO} from "../../to/LoginTO";
-import {LoginConverter} from "../../adapter/interfaces/LoginConverter";
-
-
-import {LoginConverterImpl} from "../../adapter/impl/LoginConverterImpl";
+import {LoginComponentInterface} from './LoginComponentInterface';
+import {LoginTO} from '../../to/LoginTO';
+import {LoginConverter} from '../../adapter/interfaces/LoginConverter';
+import {LoginConverterImpl} from '../../adapter/impl/LoginConverterImpl';
+import {AppConstants} from '../../constants/AppConstants';
 
 @Component({
   selector: 'app-login',
@@ -18,16 +17,16 @@ import {LoginConverterImpl} from "../../adapter/impl/LoginConverterImpl";
 
 export class LoginComponent implements OnInit , LoginComponentInterface{
   userForm: any;
-  errorMessage:string;
-  sucessMessage:string;
-  active:string="0";//0 for no content, 1 for success, 2 for error
+  errorMessage: string;
+  sucessMessage: string;
+  active = '0'; // 0 for no content, 1 for success, 2 for error
 
 
   constructor(@Inject('LoginConverter') private loginConverter: LoginConverter,private router: Router, private formBuilder: FormBuilder){
     this.userForm = formBuilder.group({
       username: [],
       password: []
-    })
+    });
  }
     // constructor(private router: Router){
     // }
@@ -39,65 +38,70 @@ export class LoginComponent implements OnInit , LoginComponentInterface{
    });
   }
 
-
-
   signUp({value, valid}: {value: LoginTO, valid: boolean}) {
-    this.loginConverter.signUp(value,this)
+    this.loginConverter.signUp(value, this);
 
   }
 
   login({value, valid}: {value: LoginTO, valid: boolean}) {
-  this.loginConverter.login(value,this)
-
+    if (value.username === 'Supervisor' && value.password === 'password') {
+      AppConstants.LoginUser = 'Supervisor';
+      this.loginConverter.login(value, this);
+    }
+    else if (value.username === 'Kitchen' && value.password === 'password') {
+      AppConstants.LoginUser = 'Kitchen';
+      this.loginConverter.login(value, this);
+    }
+    else {
+      this.setUserErrorMessageonUI('Invalid Username or Password');
+      setTimeout(() => {
+        this.setUserErrorMessageonUI('');
+      }, 4000);
+    }
   }
 
   resetPassword({value, valid}: {value: LoginTO, valid: boolean}) {
-    if(value.username == null)
+    if (value.username == null)
       {
-        this.setUserErrorMessageonUI("Please Enter Username");
+        this.setUserErrorMessageonUI('Please Enter Username');
       }
     else
       {
-        this.loginConverter.resetPassword(value,this)
+        this.loginConverter.resetPassword(value, this);
       }
 
   }
 
-  successMessageCallBack(message1:string) {
+  successMessageCallBack(message1: string) {
     console.log(message1.length + 'success');
-    this.sucessMessage = "Login Success!";
-    setTimeout(()=>{
+    this.sucessMessage = 'Login Success!';
+    setTimeout(() => {
       this.router.navigate(['/menu']);
-    },1000);
+    }, 1000);
   }
 
-  errorMessageCallBack(message:string){
-    console.log(message.length + 'Navigate to Error page');
+  errorMessageCallBack(message: string){
+    console.log(message.length + '');
   }
 
-
-
-
-
-  setUserSuccessMessageonUI(message:string)
+  setUserSuccessMessageonUI(message: string)
   {
     this.sucessMessage = message;
-    this.active="1";
-    setTimeout(()=>{
-      this.sucessMessage = "";
-      this.active="0";
-    },2000);
+    this.active = '1';
+    setTimeout(() => {
+      this.sucessMessage = 'Login Success!';
+      this.active = '1';
+    }, 2000);
   }
-  setUserErrorMessageonUI(message:string)
+  setUserErrorMessageonUI(message: string)
   {
     this.errorMessage = message;
-    this.active="2";
-    setTimeout(()=>{
-      this.errorMessage = "";
-      this.active="0";
-    },2000);
+    this.active = '2';
+    setTimeout(() => {
+      this.errorMessage = '';
+      this.active = '0';
+    }, 2000);
   }
-
 
 
   }

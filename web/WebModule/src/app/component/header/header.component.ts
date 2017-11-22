@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AppConstants} from '../../constants/AppConstants';
+
 declare var $:any;
 @Component({
   selector: 'app-header',
@@ -8,24 +10,25 @@ declare var $:any;
 
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
 
 $(document).ready(function(){
-//alert("working");
+ // alert(AppConstants.LoginUser);
 });
 
 
 var mouse_is_inside = false;
 $(document).ready(function()
 {
-    $('.header_profile_session div').hover(function(){ 
-        mouse_is_inside=true; 
-    }, function(){ 
-        mouse_is_inside=false; 
+    $('.header_profile_session div').hover(function(){
+        mouse_is_inside=true;
+    }, function(){
+        mouse_is_inside=false;
     });
-    $("body").mouseup(function(){ 
+    $("body").mouseup(function(){
         if(! mouse_is_inside)  $('.submenu').removeClass('submenu_active');
         else $('.submenu').toggleClass('submenu_active');
     });
