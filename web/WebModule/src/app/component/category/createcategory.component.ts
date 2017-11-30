@@ -4,6 +4,7 @@
 
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { FormControl, FormGroup} from '@angular/forms';
+import { Router} from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {RestURLs} from '../../constants/RestURLs';
@@ -27,7 +28,7 @@ export class CreateCategoryComponent implements OnInit {
   fileDataUri = '';
   errorMsg = '';
 
-  constructor(private _http: Http) {
+  constructor(private _http: Http,  private router: Router) {
   }
 
   previewFile() {
@@ -77,7 +78,7 @@ export class CreateCategoryComponent implements OnInit {
     const url = RestURLs.CATEGORY_GET_URL;
     res.value.imagepath = 'https://s3-us-west-1.amazonaws.com/ezmenutouch-images/drinks.png';
     console.log(res.value);
-    return this._http.post(`${url}`, res.value, headers)
+    this._http.post(`${url}`, res.value, headers)
       .subscribe(
         data => {
           console.log(data);
@@ -86,6 +87,9 @@ export class CreateCategoryComponent implements OnInit {
           console.log('Error occured: ' + err);
         }
       );
+    setTimeout(() => {
+      this.router.navigate(['/categories']);
+    }, 500);
   }
 
 

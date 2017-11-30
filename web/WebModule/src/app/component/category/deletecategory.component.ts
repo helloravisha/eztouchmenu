@@ -3,7 +3,7 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params} from '@angular/router';
+import { Router, ActivatedRoute, Params} from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {RestURLs} from '../../constants/RestURLs';
@@ -19,7 +19,7 @@ export class DeleteCategoryComponent implements OnInit {
   categoryID: any = null;
   currentCategory: any = null;
 
-  constructor(private _http: Http, private activatedRoute: ActivatedRoute,) {
+  constructor(private _http: Http, private activatedRoute: ActivatedRoute,  private router: Router) {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.categoryID = params['id'];
     });
@@ -42,7 +42,7 @@ export class DeleteCategoryComponent implements OnInit {
     headers.append('Content-Type', 'application/json');
     const url = RestURLs.CATEGORY_GET_URL + '/' + this.currentCategory.id;
     console.log(this.currentCategory);
-    return this._http.delete(`${url}`, this.currentCategory)
+    this._http.delete(`${url}`, this.currentCategory)
       .subscribe(
         data => {
           console.log(data);
@@ -51,6 +51,9 @@ export class DeleteCategoryComponent implements OnInit {
           console.log('Error occured: ' + err);
         }
       );
+    setTimeout(() => {
+      this.router.navigate(['/categories']);
+    }, 500);
   }
   ngOnInit() {
   }

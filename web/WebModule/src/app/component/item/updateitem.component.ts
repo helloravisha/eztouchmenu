@@ -4,7 +4,7 @@
 
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { FormControl, FormGroup} from '@angular/forms';
-import { ActivatedRoute, Params} from '@angular/router';
+import { Router, ActivatedRoute, Params} from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {RestURLs} from '../../constants/RestURLs';
@@ -30,7 +30,7 @@ export class UpdateItemComponent implements OnInit {
   fileDataUri = '';
   errorMsg = '';
 
-  constructor(private _http: Http, private activatedRoute: ActivatedRoute) {
+  constructor(private _http: Http, private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.itemID = params['id'];
       // console.log(this.itemID);
@@ -104,7 +104,7 @@ export class UpdateItemComponent implements OnInit {
     headers.append('Content-Type', 'application/json');
     const url = RestURLs.ITEM_GET_URL + '/' + this.currentItem.id;
     console.log(this.currentItem);
-    return this._http.put(`${url}`, this.currentItem, headers)
+    this._http.put(`${url}`, this.currentItem, headers)
       .map((res1: Response) => res1.json())
       .subscribe(
         data => {
@@ -114,6 +114,9 @@ export class UpdateItemComponent implements OnInit {
           console.log('Error occured: ' + err);
         }
       );
+    setTimeout(() => {
+      this.router.navigate(['/items']);
+    }, 500);
   }
 
 

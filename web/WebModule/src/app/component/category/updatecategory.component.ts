@@ -3,7 +3,7 @@
  */
 
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { ActivatedRoute, Params} from '@angular/router';
+import { Router, ActivatedRoute, Params} from '@angular/router';
 import { FormControl, FormGroup} from '@angular/forms';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -31,7 +31,7 @@ export class UpdateCategoryComponent implements OnInit {
   fileDataUri = '';
   errorMsg = '';
 
-  constructor(private _http: Http, private activatedRoute: ActivatedRoute) {
+  constructor(private _http: Http, private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.categoryID = params['id'];
     });
@@ -102,7 +102,7 @@ export class UpdateCategoryComponent implements OnInit {
     headers.append('Content-Type', 'application/json');
     const url = RestURLs.CATEGORY_GET_URL + '/' + this.currentCategory.id;
     console.log(this.currentCategory);
-    return this._http.put(`${url}`, this.currentCategory, headers)
+    this._http.put(`${url}`, this.currentCategory, headers)
       .subscribe(
         data => {
           console.log(data);
@@ -111,6 +111,9 @@ export class UpdateCategoryComponent implements OnInit {
           console.log('Error occured: ' + err);
         }
       );
+    setTimeout(() => {
+      this.router.navigate(['/categories']);
+    }, 500);
   }
 
   ngOnInit() {

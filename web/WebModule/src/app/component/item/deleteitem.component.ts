@@ -2,7 +2,7 @@
  * Created by harini on 11/6/17.
  */
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params} from '@angular/router';
+import {Router,  ActivatedRoute, Params} from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {RestURLs} from '../../constants/RestURLs';
@@ -17,7 +17,7 @@ export class DeleteItemComponent implements OnInit {
   itemID: any = null;
   currentItem: any = null;
 
-  constructor(private _http: Http, private activatedRoute: ActivatedRoute,) {
+  constructor(private _http: Http, private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.itemID = params['id'];
       // console.log(this.itemID);
@@ -42,7 +42,7 @@ export class DeleteItemComponent implements OnInit {
     headers.append('Content-Type', 'application/json');
     const url = RestURLs.ITEM_GET_URL + '/' + this.currentItem.id;
     console.log(this.currentItem);
-    return this._http.delete(`${url}`, this.currentItem)
+    this._http.delete(`${url}`, this.currentItem)
       .subscribe(
         data => {
           console.log(data);
@@ -51,6 +51,9 @@ export class DeleteItemComponent implements OnInit {
           console.log('Error occured: ' + err);
         }
       );
+    setTimeout(() => {
+      this.router.navigate(['/items']);
+    }, 500);
   }
   ngOnInit() {
   }

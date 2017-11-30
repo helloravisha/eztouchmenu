@@ -22,7 +22,7 @@ export class Respond2orderComponent implements OnInit {
   currentOrder: any = null;
   orderedItems: any = null;
 
-  constructor(private _http: Http, private activatedRoute: ActivatedRoute) {
+  constructor(private _http: Http, private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.orderID = params['id'];
     });
@@ -61,7 +61,7 @@ export class Respond2orderComponent implements OnInit {
     headers.append('Content-Type', 'application/json');
     const url = RestURLs.ORDERS_GET_URL + '/' + this.currentOrder.id;
     console.log(this.currentOrder);
-    return this._http.put(`${url}`, this.currentOrder, headers)
+    this._http.put(`${url}`, this.currentOrder, headers)
       .map((res1: Response) => res1.json())
       .subscribe(
       data => {
@@ -71,6 +71,9 @@ export class Respond2orderComponent implements OnInit {
         console.log('Error occured: ' + err);
       }
     );
+    setTimeout(() => {
+      this.router.navigate(['/orders']);
+    }, 500);
   }
 
   ngOnInit() {
