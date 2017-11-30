@@ -26,15 +26,15 @@
           <form [formGroup]="itemUpdateForm" (ngSubmit)="updateItem(itemUpdateForm)" ngNativeValidate>
             <div>
               <label for="name">Dish Name</label>
-              <input id="name" class="form-control" type="text" formControlName="name" [(ngModel)]='name' value="{{currentItem.name}}">
+              <input id="name" class="form-control" type="text" formControlName="name" [(ngModel)]='name'>
             </div>
             <div>
               <label for="description">Dish Description</label>
-              <textarea  id="description" class="form-control" formControlName="description" [(ngModel)]='description' value="{{currentItem.description}}"></textarea>
+              <textarea  id="description" class="form-control" formControlName="description" [(ngModel)]='description'></textarea>
             </div>
             <div >
               <label for="price" >Price</label>
-              <input id="price" class="form-control" formControlName="price" [(ngModel)]='price' value="{{currentItem.price}}">
+              <input id="price" class="form-control" formControlName="price" [(ngModel)]='price'>
             </div>
             <div>
               <img [src]="fileDataUri">

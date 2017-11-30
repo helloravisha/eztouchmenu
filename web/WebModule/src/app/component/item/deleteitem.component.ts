@@ -2,7 +2,7 @@
  * Created by harini on 11/6/17.
  */
 import { Component, OnInit } from '@angular/core';
-import {Router, ActivatedRoute, Params} from '@angular/router';
+import { ActivatedRoute, Params} from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {RestURLs} from '../../constants/RestURLs';

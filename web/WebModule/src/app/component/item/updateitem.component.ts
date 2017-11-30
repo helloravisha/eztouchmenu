@@ -93,7 +93,7 @@ export class UpdateItemComponent implements OnInit {
   }
 
   private updateItem (res) {
-    if (res.value.name != null && res.value.description  != null && res.value.price  != null) {
+    if (res.value.name && res.value.description && res.value.price) {
       this.currentItem.name = res.value.name;
       this.currentItem.description = res.value.description;
       this.currentItem.price = res.value.price;
