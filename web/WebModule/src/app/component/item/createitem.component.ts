@@ -28,6 +28,15 @@ export class CreateItemComponent implements OnInit {
   errorMsg = '';
 
   constructor(private _http: Http, private router: Router) {
+    this.getComponent();
+  }
+
+  private getComponent() {
+    return this._http.get(RestURLs.CATEGORY_GET_URL)
+      .map((res: Response) => res.json())
+      .subscribe(data => {
+        this.data = data;
+      });
   }
 
   previewFile() {
@@ -75,7 +84,12 @@ export class CreateItemComponent implements OnInit {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     const url = RestURLs.ITEM_GET_URL;
-    res.value.imagepath = 'https://s3-us-west-1.amazonaws.com/babytrak-assets/menuimages/mushroom-rice_625x350_61424324920.jpg';
+    for (const category of this.data){
+      if (category.id == res.value.foodcategory){
+        res.value.foodcategory = category;
+      }
+    }
+    res.value.imagepath = 'https://s3-us-west-1.amazonaws.com/babytrak-assets/menuimages/drinking-pineapple-juice-on-empty-stomach.jpg';
     console.log(res.value);
     this._http.post(`${url}`, res.value, headers)
       .map((res1: Response) => res1.json())
@@ -98,7 +112,8 @@ export class CreateItemComponent implements OnInit {
       name: new FormControl(),
       description: new FormControl(),
       price: new FormControl(),
-      imagepath: new FormControl()
+      imagepath: new FormControl(),
+      foodcategory: new FormControl()
     });
   }
 

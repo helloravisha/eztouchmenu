@@ -26,6 +26,14 @@
             <label for="price">Dish Price</label>
             <input id="price" formControlName="price" [(ngModel)]='price' class="form-control" placeholder="Price" type="text">
           </div>
+          <div class="form-group">
+            <label for="category">Select Category</label>
+            <select class="form-control" id="category" formControlName="foodcategory" [(ngModel)]='foodcategory'>
+              <ng-template ngIf="exists(data)" && *ngFor=" let category of data">
+                <option value={{category.id}}>{{category.name}}</option>
+              </ng-template>
+            </select>
+          </div>
           <div>
               <img [src]="fileDataUri">
               <form (submit)="uploadFile($event)">

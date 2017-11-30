@@ -17,6 +17,7 @@ import {RestURLs} from '../../constants/RestURLs';
 })
 export class UpdateItemComponent implements OnInit {
   data: any = null;
+  itemsData: any = null;
   itemUpdateForm: any = null;
   itemID: any = null;
   currentItem: any = null;
@@ -36,14 +37,22 @@ export class UpdateItemComponent implements OnInit {
       // console.log(this.itemID);
     });
     this.getItems();
+    this.getComponent();
+  }
+  private getComponent() {
+    return this._http.get(RestURLs.CATEGORY_GET_URL)
+      .map((res: Response) => res.json())
+      .subscribe(data => {
+        this.data = data;
+      });
   }
 
   private getItems() {
     return this._http.get(RestURLs.ITEM_GET_URL)
       .map((res: Response) => res.json())
       .subscribe(data => {
-        this.data = data;
-        for (const eachItem of this.data) {
+        this.itemsData = data;
+        for (const eachItem of this.itemsData) {
           if (eachItem.id == this.itemID) {
             this.currentItem = eachItem;
             // console.log(this.currentItem);
@@ -97,6 +106,11 @@ export class UpdateItemComponent implements OnInit {
       this.currentItem.name = res.value.name;
       this.currentItem.description = res.value.description;
       this.currentItem.price = res.value.price;
+    }
+    for (const category of this.data){
+      if (category.id == res.value.foodcategory){
+        res.value.foodcategory = category;
+      }
     }
     // Need to retrieve the file path from S3 using upload response
     this.currentItem.imagepath = 'https://s3-us-west-1.amazonaws.com/babytrak-assets/menuimages/mushroom-rice_625x350_61424324920.jpg';
