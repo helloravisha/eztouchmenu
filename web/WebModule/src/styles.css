@@ -18,9 +18,6 @@ body
   background: url(https://s3-us-west-1.amazonaws.com/ezmenutouch-images/loading.gif) center no-repeat #fff;
 }
 
-
-
-
 @font-face {
   font-family: 'MyriadProR';
   src: url(./assets/fonts/myraid/MyriadPro-Regular.otf);

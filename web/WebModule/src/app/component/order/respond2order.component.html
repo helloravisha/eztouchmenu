@@ -2,16 +2,58 @@
 <!--**-->
 <!--* Created by harini on 11/6/17.-->
 <!--*/-->
+
 <app-header></app-header>
 <app-navigation></app-navigation>
-<div class="container"><br />
-  <div class="row text-center fh5co-heading row-padded">
-    <div class="col-md-8 col-md-offset-2">
-      <h2 class="heading to-animate">Respond to the orders</h2>
+<div id="fh5co-menus" data-section="menu">
+  <div class="container"><br />
+    <div *ngIf="currentOrder">
+      <div class="row text-center fh5co-heading row-padded">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="heading to-animate">Respond to the order no: {{currentOrder.id}}</h2>
+          <h2>Table {{currentOrder.tableName}}</h2>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <ng-template ngIf="orderedItems.length > 0" *ngFor=" let orderItem of orderedItems">
+            <div class="fh5co-food-menu to-animate-2">
+              <ul>
+                <ng-template ngIf="exists(itemData)" && *ngFor="let item of itemData">
+                  <div *ngIf="item.id == orderItem">
+                      <li>
+                        <div class="fh5co-food-desc">
+                          <figure>
+                            <img src="{{item.imagepath}}" class="img-responsive" alt="Dish image">
+                          </figure>
+                          <div>
+                            <h3 innerHTML="{{item.id}}:  {{item.name}}"></h3>
+                            <p innerHTML="{{item.description}}"></p>
+                          <div innerHTML="Qty: 1  ${{item.price}}.00" class="fh5co-food-pricing">
+                          </div>
+                          </div>
+                        </div>
+                      </li>
+                  </div>
+                </ng-template>
+              </ul>
+            </div>
+          </ng-template>
+          <div class="item-room padding">
+              <p><span>Current Order Status: </span>{{currentOrder.orderStatus}}</p><br/>
+              <p><span>Date: </span>{{currentOrder.orderDate}}</p><br />
+              <p><span>Total Cost: </span>${{currentOrder.totalPrice}}.00</p>
+              <form [formGroup]="orderUpdateForm" (ngSubmit)="updateOrder(orderUpdateForm)" ngNativeValidate>
+                <label>Update Order Status: </label>
+                <select formControlName="orderStatus" [(ngModel)]='orderStatus' value="Ready">
+                  <option value="Ready" selected>Ready</option>
+                  <option value="InProgress">InProgress</option>
+                  <option value="Served">Served</option>
+                </select>
+                <br>
+                <input class="btn btn-primary" type="submit">
+              </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-      <p>Should display list of orders in table
-      <a  routerLink="/menu" class="btn btn-primary">RESPOND</a>
-   </p>
 </div>
-

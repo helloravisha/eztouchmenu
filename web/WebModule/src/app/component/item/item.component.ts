@@ -25,7 +25,7 @@ export class ItemComponent implements OnInit {
       .map((res: Response) => res.json())
       .subscribe(data => {
         this.data = data;
-        console.log(this.data);
+        // console.log(this.data);
       });
   }
 

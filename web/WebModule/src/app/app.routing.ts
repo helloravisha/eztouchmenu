@@ -26,6 +26,7 @@ import { UpdateItemComponent } from './component/item/updateitem.component';
 import { OrderComponent } from './component/order/order.component';
 import { Respond2orderComponent } from './component/order/respond2order.component';
 import { CreateMenuComponent } from './component/menu/createmenu.component';
+import { ImageComponent } from './component/image/image.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
   { path: 'deleteItem', component: DeleteItemComponent},
   { path: 'orders', component: OrderComponent},
   { path: 'orderRespond', component: Respond2orderComponent},
+  { path: 'imageUpload', component: ImageComponent}
 ];
 
 

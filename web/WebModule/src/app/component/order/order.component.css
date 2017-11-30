@@ -1,0 +1,91 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+h2{
+  padding-left: 30px;
+}
+.col-xs-12 {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.col-md-3, .col-xs-12, .col-sm-6{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.room-text p {
+  padding: 0 20px 0 25px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.item-room {
+  background: #fff;
+  padding-bottom: 130px;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.status-line p{
+  background-color: #d6c8cc;
+  margin-left: 10%;
+}
+.dashed-line p{
+  border: 0.5px dashed #0c0c0c;
+}
+.item-room .ro-text-two {
+  padding: 0 25px;
+}
+
+.item-room .room-price {
+  font-size: 18px;
+  color: #1ba47f;
+  font-weight: 600;
+  text-align: right;
+}
+.item-room .room-price span {
+  color: #252525;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: right;
+}
+
+.room-book a {
+  color: #fff!important;
+  text-decoration: none;
+}
+.item-room span {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #1ba47f;
+  text-transform: uppercase;
+  padding-left: 25px;
+}
+.pull-right {
+  float: right!important;
+}
+.pull-left {
+  float: left!important;
+}
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.item-room.padding{
+  margin-left: 130px !important;
+  border: none;
+}

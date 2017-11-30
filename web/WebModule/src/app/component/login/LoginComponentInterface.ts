@@ -1,4 +1,4 @@
-import {CommonInterface} from "../common/CommonInterface";
+import {CommonInterface} from '../common/CommonInterface';
 /**
  * Created by ravisha on 8/24/17.
  */

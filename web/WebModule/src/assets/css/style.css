@@ -355,9 +355,17 @@ p {
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+
+h1.heading.to-animate{
+  padding-left: 30px;
+}
 @media screen and (max-width: 768px) {
   .fh5co-heading .heading {
     font-size: 30px;
+  }
+  .heading.to-animate{
+    margin-left: 100px;
+    font-size: 25px;
   }
 }
 .fh5co-heading .heading:after {
@@ -464,7 +472,7 @@ p {
   margin-bottom: 0;
 }
 #fh5co-menus .fh5co-food-menu ul li .fh5co-food-desc > div {
-  width: 75%;
+  width: 100%;
   position: relative;
   font-size: 14px;
   line-height: 1.5;
@@ -732,7 +740,16 @@ p {
 .to-animate-2 {
   opacity: 0;
 }
-
+@media screen and (max-width: 768px) {
+  .item-room.padding {
+    border: none;
+    font-size: 10px;
+    width: 50%;
+    height: 50%;
+    margin-left: 150px;
+    padding-left: 40px;
+  }
+}
 .row-padded {
   padding-bottom: 40px;
 }

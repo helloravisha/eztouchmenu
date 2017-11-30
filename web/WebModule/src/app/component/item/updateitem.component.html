@@ -4,40 +4,53 @@
 <!--*/-->
 <app-header></app-header>
 <app-navigation></app-navigation>
-<div class="container"><br />
-  <div class="row text-center fh5co-heading row-padded">
-    <div class="col-md-8 col-md-offset-2">
-      <h2 class="heading to-animate">Update Dish</h2>
+<div id="fh5co-menus" data-section="menu">
+  <div class="container"><br />
+    <div class="row text-center fh5co-heading row-padded">
+      <div class="col-md-8 col-md-offset-2">
+        <h2 class="heading to-animate">Update Dish</h2>
+      </div>
+    </div>
+    <div *ngIf="currentItem">
+      <div class="fh5co-food-desc">
+        <div class="fh5co-food-menu to-animate-2">
+          <figure>
+            <img src="{{currentItem.imagepath}}" class="img-responsive" alt="Dish image">
+          </figure>
+          <div>
+            <h3 innerHTML="{{currentItem.name}}"></h3>
+            <p innerHTML="{{currentItem.description}}"></p>
+          </div>
+          <div innerHTML="${{currentItem.price}}.00" class="fh5co-food-pricing">
+          </div><br /><br />
+          <form [formGroup]="itemUpdateForm" (ngSubmit)="updateItem(itemUpdateForm)" ngNativeValidate>
+            <div>
+              <label for="name">Dish Name</label>
+              <input id="name" class="form-control" type="text" formControlName="name" [(ngModel)]='name' value="{{currentItem.name}}">
+            </div>
+            <div>
+              <label for="description">Dish Description</label>
+              <textarea  id="description" class="form-control" formControlName="description" [(ngModel)]='description' value="{{currentItem.description}}"></textarea>
+            </div>
+            <div >
+              <label for="price" >Price</label>
+              <input id="price" class="form-control" formControlName="price" [(ngModel)]='price' value="{{currentItem.price}}">
+            </div>
+            <div>
+              <img [src]="fileDataUri">
+              <form (submit)="uploadFile($event)">
+                <input type="file" (change)="previewFile()" #fileInput><br />
+                <button class="btn-primary" type="submit" [disabled]="fileDataUri.length === 0">Confirm Upload</button>
+              </form>
+            </div>
+            <div class="form-group "><br />
+              <input class="btn btn-primary" value="Update Dish" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-        <div class="form-group ">
-          <label for="name" class="sr-only">Dish Name</label>
-          <input id="name" class="form-control" placeholder="Dish Name" type="text">
-        </div>
-        <div class="form-group">
-          <label for="category" class="sr-only">Category</label>
-          <select class="form-control" id="category">
-            <option>Select the Category</option>
-            <option>Breakfast</option>
-            <option>Lunch</option>
-            <option>Dinner</option>
-            <option>Main course</option>
-            <option>Starter</option>
-            <option>Desserts</option>
-            <option>Chef's special</option>
-            <option>Customized</option>
-          </select>
-        </div>
-        <div class="form-group ">
-          <label for="message" class="sr-only">Dish Description</label>
-          <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Dish Description"></textarea>
-        </div>
-        <div class="form-group ">
-          <input class="btn" type="file" name="pic" accept="image/*">
-        </div>
-        <div class="form-group ">
-          <input class="btn btn-primary" value="Update Dish" type="submit">
-        </div>
 </div>
 
 

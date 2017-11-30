@@ -21,29 +21,29 @@
         </figure>
         <div>
           <h3 innerHTML="{{category.name}}"></h3>
-          <p innerHTML="{{category.description}}"></p>
+          <p innerHTML="Description:  {{category.description}}"></p>
           <a  routerLink="/updateCategory"><li class="btn btn-primary">UPDATE</li></a>
           <a  routerLink="/deleteCategory"><li class="btn btn-primary">DELETE</li></a>
         </div>
       </div>
-      <h3>DISHES</h3>
-          <ul>
-            <ng-template ngIf="exists(category.fooditems)" && *ngFor=" let item of category.fooditems">
-              <li>
-                <div class="fh5co-food-desc">
-                  <figure>
-                    <img src="{{item.imagepath}}" class="img-responsive" alt="Dish image">
-                  </figure>
-                  <div>
-                    <h3 innerHTML="{{item.name}}"></h3>
-                    <p innerHTML="{{item.description}}"></p>
-                  </div>
-                </div>
-                <div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">
-                </div>
-              </li>
-            </ng-template>
-          </ul>
+      <!--<h3>DISHES</h3>-->
+          <!--<ul>-->
+            <!--<ng-template ngIf="exists(category.fooditems)" && *ngFor=" let item of category.fooditems">-->
+              <!--<li>-->
+                <!--<div class="fh5co-food-desc">-->
+                  <!--<figure>-->
+                    <!--<img src="{{item.imagepath}}" class="img-responsive" alt="Dish image">-->
+                  <!--</figure>-->
+                  <!--<div>-->
+                    <!--<h3 innerHTML="{{item.name}}"></h3>-->
+                    <!--<p innerHTML="{{item.description}}"></p>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">-->
+                <!--</div>-->
+              <!--</li>-->
+            <!--</ng-template>-->
+          <!--</ul>-->
     </div>
   </ng-template>
 </div>

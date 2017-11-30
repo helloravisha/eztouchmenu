@@ -8,5 +8,4 @@ export class AppConstants{
   public static TEST_CONSTANT='Test Constant';
  // public static IDLY_URL ='Test Constant';
   public static  LoginUser ='';
-
 }

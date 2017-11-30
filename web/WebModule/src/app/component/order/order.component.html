@@ -1,6 +1,6 @@
-<!--* Created by harini on 11/6/17.-->
+<!--* Created by harini on 11/26/17.-->
 <!--**-->
-<!--* Created by harini on 11/6/17.-->
+<!--* Created by harini on 11/26/17.-->
 <!--*/-->
 <app-header></app-header>
 <app-navigation></app-navigation>
@@ -9,10 +9,47 @@
     <div class="col-md-8 col-md-offset-2">
       <h2 class="heading to-animate">Orders</h2>
     </div>
-    <ul class="col-lg-12 col-md-12 col-sm-12">
-      <a  routerLink="/orderRespond"><li class="btn btn-primary">RESPOND</li></a>
-    </ul>
+    <div class="w3-main" style="margin:100px">
+      <!-- Tables Grid-->
+      <div class="w3-row-padding">
+        <ng-template ngIf="exists(data)" && *ngFor=" let order of data">
+          <div class="w3-third w3-container w3-margin-bottom">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="item-room">
+                <div class="room-image">
+                  <img src="https://s3-us-west-1.amazonaws.com/ezmenutouch-images/Restaurant_Seating.jpg" alt="hotel seating image">
+                </div>
+                <div class="room-text dashed-line">
+                  <h2>Table  {{order.tableName}}</h2>
+                  <span>Order No:  #{{order.id}} </span>
+                  <ng-template ngIf="exists(order.orderedItems)" && *ngFor=" let orderItem of order.orderedItems.split(',')">
+                    <ng-template ngIf="exists(itemData)" && *ngFor="let item of itemData">
+                      <div *ngIf="item.id == orderItem">
+                        <p>{{item.name}}<span class="pull-right">Qty: 1 </span></p>
+                      </div>
+                    </ng-template>
+                  </ng-template>
+                </div>
+                  <div class="room-text status-line">
+                    <p class="pull-left">Order Status:<span class="pull-right">{{order.orderStatus}}</span></p>
+                    <p class="pull-left">Date:<span class="pull-right">{{order.orderDate}}</span></p>
+                  </div>
+                 <div class="ro-text-two">
+                    <div class="pull-left">
+                      <a [routerLink]="['/orderRespond']" [queryParams]="{ id: order.id}" class="btn btn-primary">Respond</a>
+                    </div>
+                    <div class="room-price pull-right">
+                      <p><span>Total Cost</span><br />${{order.totalPrice}}.00</p>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <!-- Tables Grid-->
+    </div>
   </div>
-      <p>Should display list of orders in table</p>
 </div>
+
 

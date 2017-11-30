@@ -10,8 +10,28 @@
       <h2 class="heading to-animate">Delete Dish</h2>
     </div>
   </div>
-      <p>Should display the details of the particular dish</p>
-  <input class="btn btn-primary" value="Delete Dish" type="submit">
+  <div *ngIf="currentItem">
+    <div id="fh5co-menus" data-section="menu">
+      <div class="container"><br />
+        <div class="fh5co-food-desc">
+          <div class="fh5co-food-menu to-animate-2">
+            <figure>
+              <img src="{{currentItem.imagepath}}" class="img-responsive" alt="Dish image">
+            </figure>
+            <div>
+              <h3 innerHTML="{{currentItem.name}}"></h3>
+              <p innerHTML="{{currentItem.description}}"></p>
+            </div>
+            <div innerHTML="${{currentItem.price}}.00" class="fh5co-food-pricing">
+            </div>
+            <form (ngSubmit)="deleteItem()" ngNativeValidate>
+              <input class="btn btn-primary" value="Delete Dish" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 

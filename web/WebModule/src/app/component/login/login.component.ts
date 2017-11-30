@@ -6,7 +6,6 @@ import {LoginComponentInterface} from './LoginComponentInterface';
 import {LoginTO} from '../../to/LoginTO';
 import {LoginConverter} from '../../adapter/interfaces/LoginConverter';
 import {LoginConverterImpl} from '../../adapter/impl/LoginConverterImpl';
-import {AppConstants} from '../../constants/AppConstants';
 
 @Component({
   selector: 'app-login',
@@ -21,8 +20,7 @@ export class LoginComponent implements OnInit , LoginComponentInterface{
   sucessMessage: string;
   active = '0'; // 0 for no content, 1 for success, 2 for error
 
-
-  constructor(@Inject('LoginConverter') private loginConverter: LoginConverter,private router: Router, private formBuilder: FormBuilder){
+  constructor(@Inject('LoginConverter') private loginConverter: LoginConverter, private router: Router, private formBuilder: FormBuilder){
     this.userForm = formBuilder.group({
       username: [],
       password: []
@@ -40,16 +38,13 @@ export class LoginComponent implements OnInit , LoginComponentInterface{
 
   signUp({value, valid}: {value: LoginTO, valid: boolean}) {
     this.loginConverter.signUp(value, this);
-
   }
 
   login({value, valid}: {value: LoginTO, valid: boolean}) {
     if (value.username === 'Supervisor' && value.password === 'password') {
-      AppConstants.LoginUser = 'Supervisor';
       this.loginConverter.login(value, this);
     }
     else if (value.username === 'Kitchen' && value.password === 'password') {
-      AppConstants.LoginUser = 'Kitchen';
       this.loginConverter.login(value, this);
     }
     else {
@@ -73,7 +68,7 @@ export class LoginComponent implements OnInit , LoginComponentInterface{
   }
 
   successMessageCallBack(message1: string) {
-    console.log(message1.length + 'success');
+    console.log(message1 + '   success');
     this.sucessMessage = 'Login Success!';
     setTimeout(() => {
       this.router.navigate(['/menu']);
@@ -81,30 +76,26 @@ export class LoginComponent implements OnInit , LoginComponentInterface{
   }
 
   errorMessageCallBack(message: string){
-    console.log(message.length + '');
+    console.log(message.length + message);
   }
 
   setUserSuccessMessageonUI(message: string)
   {
-    this.sucessMessage = message;
     this.active = '1';
     setTimeout(() => {
-      this.sucessMessage = 'Login Success!';
+      this.sucessMessage = message;
       this.active = '1';
     }, 2000);
   }
   setUserErrorMessageonUI(message: string)
   {
-    this.errorMessage = message;
     this.active = '2';
     setTimeout(() => {
-      this.errorMessage = '';
+      this.errorMessage = message;
       this.active = '0';
     }, 2000);
   }
-
-
-  }
+}
 
 
 

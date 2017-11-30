@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {LoginComponentInterface} from "../component/login/LoginComponentInterface";
+import {LoginComponentInterface} from '../component/login/LoginComponentInterface';
 
 
 @Injectable()
@@ -8,7 +8,6 @@ export class LoginService {
 
 
   constructor() {
-
   }
 
   public  signUp(loginUserEmail:string,password:string,loginComponentInterface:LoginComponentInterface):void{
@@ -16,12 +15,11 @@ export class LoginService {
   }
 
   public  login(loginUserEmail:string,password:string,loginComponentInterface:LoginComponentInterface):void{
-            loginComponentInterface.successMessageCallBack("Welcome "+loginUserEmail);
+      loginComponentInterface.successMessageCallBack("Welcome " + loginUserEmail);
   }
 
   public resetPassword(loginUserEmail:string,loginComponentInterface:LoginComponentInterface){
 
   }
-
 
 }

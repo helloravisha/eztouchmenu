@@ -7,12 +7,8 @@
         </a>
       </div>
     </div>
-    <div *ngIf="LoginUser == 'Kitchen'; then header1">
-    </div>
-    <div *ngIf="LoginUser == 'Supervisor'; then headeradmin">
-    </div>
-    <ng-template #header1><app-header1 ></app-header1></ng-template>
-    <ng-template #headeradmin><app-header-admin></app-header-admin></ng-template>
+      <div *ngIf="user === Kitchen"><app-header1 ></app-header1></div>
+      <!--<div *ngIf="user === Supervisor"><app-header-admin></app-header-admin></div>-->
   </div>
 </div>
 
