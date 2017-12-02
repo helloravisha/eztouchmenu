@@ -2,464 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c87f153e-addd-4cfb-af66-89c37023d944" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.idea/WebModule.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/d/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/d/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/adapter/impl/CommonConverter.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/adapter/impl/LoginConverterImpl.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/adapter/interfaces/LoginConverter.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/app.routing.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/category.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/category.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/category.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/category.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/createcategory.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/createcategory.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/deletecategory.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/deletecategory.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/updatecategory.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/category/updatecategory.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/common/CommonInterface.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header-admin/header-admin.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header-admin/header-admin.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header-admin/header-admin.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header-admin/header-admin.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header/header.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header/header.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header/header.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header/header.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header1/header1.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header1/header1.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header1/header1.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/header1/header1.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/image/image.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/image/image.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/image/image.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/createitem.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/createitem.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/deleteitem.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/deleteitem.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/item.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/item.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/item.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/item.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/updateitem.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/item/updateitem.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/LoginComponentInterface.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/forgotpassword.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/forgotpassword.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/login.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/login.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/login.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/login.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/registeration.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/login/registeration.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/createmenu.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/createmenu.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/deletemenu.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/deletemenu.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/displaymenu.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/displaymenu.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/menu.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/menu.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/menu.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/menu.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/updatemenu.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/menu/updatemenu.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/navigation/navigation.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/navigation/navigation.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/navigation/navigation.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/order/order.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/order/order.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/order/order.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/order/order.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/order/respond2order.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/component/order/respond2order.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/constants/AppConstants.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/constants/Messages.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/constants/NodeConstants.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/constants/RestURLs.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/service/DefaultService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/service/error.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/service/login.service.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/service/login.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/to/LoginTO.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/util/PathUtil.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/vo/LoginVO.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/vo/NameValueVO.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/app/vo/RestAPIVO.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/datepicker/bootstrap-clockpicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/datepicker/bootstrap-datepicker3.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/icomoon.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/jquery.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/simple-line-icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/css/style.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/_bootstrap-compass.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/_bootstrap-mincer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/_bootstrap-sprockets.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/blue.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_glyphicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_input-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_center-block.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_opacity.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_progress-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_text-overflow.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/style2.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/style3.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/sass/style4.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/Museo-300.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/Read Me.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/demo-files/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/demo-files/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/selection.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/icomoon/icomoon/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-BoldCond.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-BoldCondIt.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-BoldIt.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-Cond.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-CondIt.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-It.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-Semibold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/myraid/MyriadPro-SemiboldIt.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Light.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Light.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Medium.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Medium.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Thin.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/roboto/Roboto-Thin.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/simple-line-icons/Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/simple-line-icons/Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/simple-line-icons/Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/simple-line-icons/Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/0103-served-plate_128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/0103-served-plate_64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/activity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/activitygreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/attendance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/attendancecolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/bus_tracker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/bus_trackertwo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/calendarcolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/calender.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/cameracolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/contactscolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/daycalendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/documents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/download.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/exam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/examcolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/examtest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/examtestgreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/faculty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/faculty_management.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/faculty_managementgreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/facultycolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/facultytwo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/fees_payment.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/fees_paymenttwo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/feescolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/friday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/greensphere.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/home1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/hometwo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/librarycolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/management.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/message.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/message_image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/message_notification.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/message_text.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/message_video.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/messagecolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/messagegreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/messages.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/monday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/moneycolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/more.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/moregreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/moreone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/moreoptions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/overall_performance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/parents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/EXAM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/Email&amp;sms.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/Exam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/RegisteredAppUsers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/User_Group.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/activity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/archive-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/classes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/contacts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/course.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/documents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/exam result.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/examresult.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/fees.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/myinformation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/provisinaltask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/requestforself.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/setting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/sms_email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/student.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/teacher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/timer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/timetable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/New folder/useracess.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/RegisteredAppUsers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/Roles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/User.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/aboutschool.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/activities.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/archive.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/class.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/contacts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/course.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/documents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/fees.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/mail_sms.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/paesnaskcategories.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/result.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/setting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/student.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/teacher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/timetable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/patashala/timetable1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/pd_fees.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/pd_message.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/pd_result.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/personal_details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/personal_detailstwo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/profilecolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/redsphere.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/resultscolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/rightarrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/roundshapebutton.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/saturday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/schoolbuscolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/share.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/splashscreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/studentprofile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/subject.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/subjectgreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/subjectone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/sunday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/syllabus_completion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/teachers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/textcolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/thursday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/timetable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/timetablecolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/timetabletwo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/todays_schedule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/tuesday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/up_next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/user_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/videocolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/icons/wednesday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/Address.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/Phone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/SchoolPrinc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/attendance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/classes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/documents.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/exam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/examresults.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/faculty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/schoolid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/schoolname.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/student.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/subject.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/assets/images/webicons/timetable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WebModule/tslint.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/menu/createmenu.component.html" afterPath="$PROJECT_DIR$/src/app/component/menu/createmenu.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/menu/deletemenu.component.html" afterPath="$PROJECT_DIR$/src/app/component/menu/deletemenu.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/menu/displaymenu.component.html" afterPath="$PROJECT_DIR$/src/app/component/menu/displaymenu.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/menu/menu.component.html" afterPath="$PROJECT_DIR$/src/app/component/menu/menu.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/menu/updatemenu.component.html" afterPath="$PROJECT_DIR$/src/app/component/menu/updatemenu.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/style.css" afterPath="$PROJECT_DIR$/src/assets/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -474,31 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigation.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navigation.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/component/navigation/navigation.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header1.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/component/header1/header1.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/component/header/header.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -517,13 +46,15 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>menu</find>
       <find>h1</find>
       <find>heading</find>
       <find>to-animate</find>
       <find>75%</find>
       <find>@</find>
-      <find>heading</find>
+      <find>s3</find>
+      <find>margin</find>
+      <find>menu</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -549,11 +80,6 @@
         <option value="$PROJECT_DIR$/src/app/component/login/login.component.ts" />
         <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/app/component/order/order.component.css" />
-        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/src/app/component/menu/displaymenu.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/menu/createmenu.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/menu/deletemenu.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/menu/updatemenu.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/image/image.component.css" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
@@ -574,15 +100,20 @@
         <option value="$PROJECT_DIR$/src/app/component/category/updatecategory.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/category/deletecategory.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/category/createcategory.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/component/menu/menu.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/item/createitem.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/item/createitem.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/item/updateitem.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/item/updateitem.component.ts" />
         <option value="$PROJECT_DIR$/src/app/component/header1/header1.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/login/login.component.html" />
-        <option value="$PROJECT_DIR$/src/app/component/navigation/navigation.component.html" />
         <option value="$PROJECT_DIR$/src/app/component/header/header.component.html" />
+        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/app/component/menu/displaymenu.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/menu/menu.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/menu/deletemenu.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/menu/updatemenu.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/menu/createmenu.component.html" />
+        <option value="$PROJECT_DIR$/src/app/component/navigation/navigation.component.html" />
       </list>
     </option>
   </component>
@@ -598,10 +129,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="56" />
+    <option name="x" value="85" />
     <option name="y" value="23" />
-    <option name="width" value="1384" />
-    <option name="height" value="780" />
+    <option name="width" value="1355" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -619,6 +150,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -650,14 +183,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -695,6 +226,15 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <configuration name="e2e" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="e2e" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <configuration name="ng" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -722,16 +262,18 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="npm.start" />
       <item index="1" class="java.lang.String" itemvalue="npm.build" />
       <item index="2" class="java.lang.String" itemvalue="npm.test" />
       <item index="3" class="java.lang.String" itemvalue="npm.ng" />
+      <item index="4" class="java.lang.String" itemvalue="npm.e2e" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="npm.ng" />
-        <item index="1" class="java.lang.String" itemvalue="npm.test" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="npm.e2e" />
+        <item index="1" class="java.lang.String" itemvalue="npm.ng" />
+        <item index="2" class="java.lang.String" itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -754,28 +296,31 @@
       <workItem from="1511336389063" duration="287000" />
       <workItem from="1511719675553" duration="77650000" />
       <workItem from="1512173327154" duration="1471000" />
-      <workItem from="1512185275527" duration="768000" />
+      <workItem from="1512185275527" duration="992000" />
+      <workItem from="1512198764257" duration="1493000" />
+      <workItem from="1512236317063" duration="439000" />
+      <workItem from="1512238500610" duration="5740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94117000" />
+    <option name="totallyTimeSpent" value="102013000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1384" height="780" extended-state="1" />
+    <frame x="85" y="23" width="1355" height="813" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.296405" sideWeight="0.6772983" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30284858" sideWeight="0.6414763" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22189781" sideWeight="0.16140866" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22189781" sideWeight="0.83859134" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.296405" sideWeight="0.3227017" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20752089" sideWeight="0.17616192" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30284858" sideWeight="0.35852373" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20752089" sideWeight="0.82383806" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944974" sideWeight="0.4934334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.497318" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -804,13 +349,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/adapter/impl/LoginConverterImpl.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/adapter/interfaces/LoginConverter.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -851,34 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/menu/createmenu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/menu/deletemenu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/menu/displaymenu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/menu/updatemenu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -971,20 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="689" column="16" lean-forward="true" selection-start-line="689" selection-start-column="16" selection-end-line="689" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/item/item.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1128,26 +624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/menu/menu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/component/navigation/navigation.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/component/header1/header1.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1155,6 +635,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/item/item.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="484" column="0" lean-forward="true" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/menu/deletemenu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/menu/displaymenu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/menu/createmenu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/menu/updatemenu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/item/item.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/menu/menu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/component/navigation/navigation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

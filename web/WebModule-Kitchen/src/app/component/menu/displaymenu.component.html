@@ -17,19 +17,23 @@
          <a  routerLink="/deleteMenu"><li class="btn btn-primary">DELETE</li></a>
        </ul>
      </div>
-     <div>
        <ng-template ngIf="exists(data)" && *ngFor=" let category of data">
-         <div class="fh5co-food-menu to-animate-2">
-           <div class="fh5co-food-desc">
-             <figure>
-               <img src="{{category.imagepath}}" class="img-responsive" alt="Category Icon">
-             </figure>
+         <div class="fh5co-food-menu to-animate-2 inline-align">
+           <div id="{{category.name}}" class="fh5co-food-desc ">
+             <div class="category-icon">
+               <figure>
+                 <img src="{{category.imagepath}}" class="img-responsive" alt="Category Icon">
+               </figure>
+             </div>
              <div>
                <h3 innerHTML="{{category.name}}"></h3>
              </div>
            </div>
-           <ul>
-             <ng-template ngIf="exists(category.fooditems)" && *ngFor=" let item of category.fooditems">
+         </div>
+
+         <ng-template ngIf="exists(category.fooditems)" && *ngFor=" let item of category.fooditems">
+           <div class="fh5co-food-menu to-animate-2">
+             <ul>
                <li>
                  <div class="fh5co-food-desc">
                    <figure>
@@ -39,14 +43,13 @@
                      <h3 innerHTML="{{item.name}}"></h3>
                      <p innerHTML="{{item.description}}"></p>
                    </div>
-                 </div>
-                 <div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">
+                   <div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">
+                   </div>
                  </div>
                </li>
-             </ng-template>
-           </ul>
-         </div>
+             </ul>
+           </div>
+         </ng-template>
        </ng-template>
-     </div>
    </div>
  </div>
