@@ -1,7 +1,5 @@
 Eztouchmenu
 ==================
-
-
 [![Build Status](http://54.183.149.36:8080/job/ezmenutouch/badge/icon)](http://54.183.149.36:8080/job/ezmenutouch/)
 
 Eztouchmenu has been designed to address many of the difficulties encountered by both the business owners and the customers  in the dining and entertainment industry.Business owner wants to maximize the revenues by providing quality products and a good and efficient service, all in all provide an enjoyable atmosphere for the customers.  
