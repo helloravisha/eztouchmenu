@@ -71,7 +71,7 @@ export class LoginComponent implements OnInit , LoginComponentInterface{
     console.log(message1 + '   success');
     this.sucessMessage = 'Login Success!';
     setTimeout(() => {
-      this.router.navigate(['/menu']);
+      this.router.navigate(['/orders']);
     }, 1000);
   }
 

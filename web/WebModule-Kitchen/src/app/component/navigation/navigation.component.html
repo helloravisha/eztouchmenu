@@ -1,6 +1,8 @@
 <div class="navbar navbar-inverse navbar-fixed-left">
   <ul class="nav navbar-nav">
-    <br><br>
+    <br /><br />
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/menu"><b>Menu</b></a></li>
     <ng-template ngIf="exists(data)" && *ngFor=" let category of data">
     <li><a href="/menu#{{category.name}}">{{category.name}}</a></li>
     </ng-template>
@@ -11,7 +13,6 @@
         <!--<li><a href="/items">Manage Items</a></li>-->
       <!--</ul>-->
     <!--</li>-->
-    <li><a href="/orders">Orders</a></li>
   </ul>
 </div>
 

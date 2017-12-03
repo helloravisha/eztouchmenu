@@ -25,27 +25,28 @@
                             <img src="{{item.imagepath}}" class="img-responsive" alt="Dish image">
                           </figure>
                           <div>
-                            <h3 innerHTML="{{item.id}}:  {{item.name}}"></h3>
+                            <h3 innerHTML="{{item.name}}"></h3>
                             <p innerHTML="{{item.description}}"></p>
-                          <div innerHTML="Qty: 1  ${{item.price}}.00" class="fh5co-food-pricing">
                           </div>
-                          </div>
+                          <p class="fh5co-food-pricing">Qty: 1</p>
+                          <p class="fh5co-food-pricing">Price:  ${{item.price}}.00</p>
+                          <br />
                         </div>
                       </li>
                   </div>
                 </ng-template>
               </ul>
             </div>
-          </ng-template>
+          </ng-template><br />
           <div class="item-room padding">
               <p><span>Current Order Status: </span>{{currentOrder.orderStatus}}</p><br/>
               <p><span>Date: </span>{{currentOrder.orderDate}}</p><br />
-              <p><span>Total Cost: </span>${{currentOrder.totalPrice}}.00</p>
+              <p><span>Total Cost: </span>${{currentOrder.totalPrice}}0</p>
               <form [formGroup]="orderUpdateForm" (ngSubmit)="updateOrder(orderUpdateForm)" ngNativeValidate>
                 <label>Update Order Status: </label>
-                <select formControlName="orderStatus" [(ngModel)]='orderStatus' value="Ready">
-                  <option value="Ready" selected>Ready</option>
+                <select formControlName="orderStatus" [(ngModel)]='orderStatus' value="InProgress">
                   <option value="InProgress">InProgress</option>
+                  <option value="Ready" selected>Ready</option>
                   <option value="Served">Served</option>
                 </select>
                 <br>
