@@ -2,7 +2,7 @@ Eztouchmenu
 ==================
 
 
-[![Build Status](http://54.183.149.36:8080/buildStatus/icon?job=ezmenutouch)](http://54.183.149.36:8080/job/ezmenutouch)
+[![Build Status](http://54.183.149.36:8080/job/ezmenutouch/badge/icon)](http://54.183.149.36:8080/job/ezmenutouch/)
 
 Eztouchmenu has been designed to address many of the difficulties encountered by both the business owners and the customers  in the dining and entertainment industry.Business owner wants to maximize the revenues by providing quality products and a good and efficient service, all in all provide an enjoyable atmosphere for the customers.  
 Customers want quality and good service. They don't want to wait around to order, to receive their food, drink or the bill. They want to look through the menu at their leisure and make the best choice.Eztouchmenu is an interactive menu, visualized on a wireless or seamless LCD screen located on each table of the bar or restaurant, offering customers a full range of ordering and interactive entertainment services. This includes dynamic menu management and instant communication between the chef/kitchen and the customers. 
