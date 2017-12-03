@@ -1,6 +1,8 @@
 Eztouchmenu
 ==================
-[![Build Status](http://54.183.149.36:8080/buildStatus/icon?job=ezmenutouch)](http://54.183.149.36:8080/job/ezmenutouch)
+
+
+[![Build Status](http://54.183.149.36:8080/job/ezmenutouch/badge/icon?style=plastic)](http://54.183.149.36:8080/job/ezmenutouch)
 
 Eztouchmenu has been designed to address many of the difficulties encountered by both the business owners and the customers  in the dining and entertainment industry.Business owner wants to maximize the revenues by providing quality products and a good and efficient service, all in all provide an enjoyable atmosphere for the customers.  
 Customers want quality and good service. They don't want to wait around to order, to receive their food, drink or the bill. They want to look through the menu at their leisure and make the best choice.Eztouchmenu is an interactive menu, visualized on a wireless or seamless LCD screen located on each table of the bar or restaurant, offering customers a full range of ordering and interactive entertainment services. This includes dynamic menu management and instant communication between the chef/kitchen and the customers. 
@@ -11,13 +13,13 @@ Customers want quality and good service. They don't want to wait around to order
 
 - [Details](#details)
 - [Introduction](#introduction)
-    - [Feature List](#feature-list)
+- [Feature List](#feature-list)
+    - [Web Module](#web-module)
+    - [Mobile Module](#mobile-module)
 - [Demo](#demo)
-    - [Login/Sign-up](#login)
-    - [Upload](#upload-a-new-image-to-cloud)
-    - [View](#view-image-details-in-list-page)
-    - [Download](#download-from-cloud-front-faster)
-    - [Update](#update-both-contents-and-image-file)
+    - [Mobile Application](#mobile-application)
+    - [Order Management](#order-management)
+    - [Menu Management](#menu-management)
 - [Links](#links)
 
 ## Details
@@ -69,31 +71,9 @@ The purpose of this document is to explain the main idea of  EzmenuTouch. This d
 ## Demo
 ### Mobile Application
 
-* In Web::Page, root page (display no images unless logged in)
-* Click on the Login option in the navigation pane or Sing-up if new user.
-* Provide emailID and password
-* Click "Login" 
-
-![Login](https://i.imgur.com/XbaWvw9.png)
-
 ### Order Management
 
-* In the home page click 'Add new photo' button
-* Provide Title and Description
-* Press 'Submit' button.
-* Uploaded successflly in the cloud AWS S3
-
-![Upload new image form](https://i.imgur.com/n4bUEMu.png)
-
 ### Menu Management
-
-* In the home page click on any image tha that you want to view
-* Left side, the image file
-* Righr side, the image related details
-* You can Edit/ Delete the file from this form
-* The images are retrieved from S3 via AWS CloudFront distribution Edge Location
-
-![View the image details](https://i.imgur.com/YMEB4Uz.png)
 
 ## Links
 
