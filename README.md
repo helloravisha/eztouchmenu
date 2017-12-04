@@ -1,5 +1,5 @@
 # Eztouchmenu     [![Build Status](https://travis-ci.org/lil-boat/playtest-set-game.svg?branch=development)](http://54.183.149.36:8080/job/ezmenutouch/)   [![Logo](https://i.imgur.com/hgm3Beit.png)](http://ezmenutouch.com)
-==================
+
 
 Eztouchmenu has been designed to address many of the difficulties encountered by both the business owners and the customers  in the dining and entertainment industry.Business owner wants to maximize the revenues by providing quality products and a good and efficient service, all in all provide an enjoyable atmosphere for the customers.  
 Customers want quality and good service. They don't want to wait around to order, to receive their food, drink or the bill. They want to look through the menu at their leisure and make the best choice.Eztouchmenu is an interactive menu, visualized on a wireless or seamless LCD screen located on each table of the bar or restaurant, offering customers a full range of ordering and interactive entertainment services. This includes dynamic menu management and instant communication between the chef/kitchen and the customers. 
@@ -32,8 +32,8 @@ Customers want quality and good service. They don't want to wait around to order
 |Professor| [Mr.SANJAY GARJE](https://www.linkedin.com/in/sanjaygarje/) |
 |ISA|[DIVYANKITHA Urs](https://www.linkedin.com/in/divyankithaurs/) |
 |Team | [Harini Balakrishnan](https://www.linkedin.com/in/harini-balakrishnan/) 
-|Team | [Ravi Katta](https://www.linkedin.com/in/harini-balakrishnan/)  
-|Team | [Rajalakshmi Babu](https://www.linkedin.com/in/harini-balakrishnan/) 
+|Team | [Ravi Katta](https://www.linkedin.com/in/ravi-shanker-katta/)  
+|Team | [Rajalakshmi Babu](https://www.linkedin.com/in/rajalakshmi-babu-79a100102/) 
 |Team | [Sunder Thyagarajan](https://www.linkedin.com/in/sunderthyagarajan/)
 
 ## Introduction
