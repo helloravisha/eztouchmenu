@@ -1,0 +1,49 @@
+<!--* Created by harini on 11/6/17.-->
+<!--**-->
+<!--* Created by harini on 11/6/17.-->
+<!--*/-->
+<app-header></app-header>
+<app-navigation></app-navigation>
+<div id="fh5co-menus" data-section="menu">
+  <div class="container"><br />
+    <div class="row text-center fh5co-heading row-padded">
+      <div class="col-md-8 col-md-offset-2">
+        <h2 class="heading to-animate">Delete Category</h2>
+      </div>
+    </div>
+    <div class="fh5co-food-menu to-animate-2">
+      <div class="fh5co-food-desc">
+        <div *ngIf="currentCategory">
+          <figure>
+            <img src="{{currentCategory.imagepath}}" class="img-responsive" alt="Category Icon">
+          </figure>
+          <div>
+            <h3 innerHTML="{{currentCategory.name}}"></h3>
+            <p innerHTML="Description:  {{currentCategory.description}}"></p>
+          </div>
+          <h3>DISHES</h3>
+          <ul>
+            <ng-template ngIf="exists(currentCategory.fooditems)" && *ngFor=" let item of currentCategory.fooditems">
+              <li>
+                <div class="fh5co-food-desc">
+                  <figure>
+                    <img src="{{item.imagepath}}" class="img-responsive" alt="Dish image">
+                  </figure>
+                  <div>
+                    <h3 innerHTML="{{item.name}}"></h3>
+                    <p innerHTML="{{item.description}}"></p>
+                  </div>
+                </div>
+                <div innerHTML="${{item.price}}.00" class="fh5co-food-pricing">
+                </div>
+              </li>
+            </ng-template>
+          </ul>
+          <form (ngSubmit)="deleteCategory()" ngNativeValidate>
+            <input class="btn btn-primary" value="Delete Category" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

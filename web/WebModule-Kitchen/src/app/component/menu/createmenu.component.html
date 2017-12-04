@@ -1,0 +1,53 @@
+<!--* Created by harini on 11/6/17.-->
+<!--**-->
+<!--* Created by harini on 11/6/17.-->
+<!--*/-->
+<app-header></app-header>
+<app-navigation></app-navigation>
+<div class="container"><br />
+  <div class="row text-center fh5co-heading row-padded">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="heading to-animate">Create a new Menu</h2>
+    </div>
+  </div>
+  <div class="form-group ">
+    <label for="name" class="sr-only">Menu Name</label>
+    <input id="name" class="form-control" placeholder="Menu Name" type="text">
+  </div>
+  <div class="form-group">
+    <label for="category" class="sr-only">Add Categories</label>
+    <select class="form-control" id="category">
+      <option>Select the Category</option>
+      <option>Appetizers</option>
+      <option>Beverages</option>
+      <option>Entrees</option>
+      <option>Breads</option>
+      <option>Biryanis</option>
+      <option>Desserts</option>
+    </select>
+    <br/>
+    <button class="btn btn-primary" onclick="myFunction()">Add Category</button>
+  </div>
+  <div>
+    <h4>Added Categories:</h4>
+    <ol id="list"></ol>
+  </div>
+  <div class="form-group ">
+    <label for="message" class="sr-only">Menu Description</label>
+    <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Menu Description"></textarea>
+  </div>
+  <div class="form-group ">
+    <input class="btn" type="file" name="pic" accept="image/*">
+  </div>
+  <div class="form-group ">
+    <input class="btn btn-primary" value="Create Menu" type="submit">
+  </div>
+</div>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("category").value;
+    document.getElementById("list").innerHTML = x;
+  }
+</script>

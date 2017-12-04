@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">My App Portfolio</string>
+    <string name="movie_detail">Movie Details</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="popular">MOST POPULAR</string>
+    <string name="highRating">HIGHEST RATED</string>
+    <string name="favourite">FAVOURITE</string>
+    <string name="sortOrder">SORT_ORDER</string>
+    <string name="actionbar_bgcolor"></string>
+    <string name="title_activity_sportify_steamer">SportifySteamer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detailed_movie">DetailedMovieActivity</string>
+    <string name="title_activity_sportify_tab">SportifyTabActivity</string>
+
+
+
+        <!-- Strings related to login -->
+        <string name="prompt_email">Email</string>
+        <string name="prompt_password">Password (optional)</string>
+        <string name="action_sign_in">Test Service</string>
+        <string name="register">uploadImage</string>
+        <string name="registerButton">Register</string>
+        <string name="validation">Validate OTP</string>
+        <string name="action_sign_in_short">Sign in</string>
+        <string name="error_invalid_email">This email address is invalid</string>
+        <string name="error_invalid_password">This password is too short</string>
+        <string name="error_incorrect_password">This password is incorrect</string>
+        <string name="error_field_required">This field is required</string>
+        <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+        <string name="userswitch">Switch User</string>
+        <string name="submitAttendance">Slide to Submit</string>
+        <string name="searchstudent">Search Students</string>
+        <string name="students">Students</string>
+        <string name="searchfaculty">Search Faculty</string>
+        <string name="drawer_open">Open</string>
+        <string name="drawer_close">Close</string>
+        <string name="loginas">Login As</string>
+        <string name="parent">Parent</string>
+        <string name="parentask">Parent Ask</string>
+        <string name="teacher">Teacher</string>
+        <string name="management">Management</string>
+        <string name="menu">Menu</string>
+        <string name="classinfo">Class Info</string>
+        <string name="teachers">Teachers</string>
+
+
+        <string name="todayschudle">Today\'s \n Schedule</string>
+        <string name="todayschudl">Today\'s Schedule</string>
+        <string name="personal">Personal</string>
+        <string name="profile">Profile</string>
+        <string name="rating">Rating</string>
+        <string name="record">Record</string>
+        <string name="stop">Stop</string>
+        <string name="play">Play</string>
+
+        <string name="banners">Banners</string>
+        <string name="announcements">Announcements</string>
+        <string name="birthday">Today\'s \n Birthdays</string>
+        <string name="todaybirthday">Today\'s Birthdays</string>
+
+        <string name="events">Events</string>
+        <string name="upcomingevents">Upcoming \n Events</string>
+        <string name="upcomingevent">Upcoming Events</string>
+        <string name="exam">Exams</string>
+        <string name="feedback">FeedBack</string>
+
+        <string name="schedule">Schedule</string>
+        <string name="update">Update</string>
+
+        <string name="nodata">No Data Found</string>
+        <string name="examresults">Results</string>
+        <string name="upcomingexam">Upcoming \n Exams</string>
+        <string name="upcomingexa">Upcoming Exams</string>
+
+        <string name="classes">Classes</string>
+        <string name="syllabus">Syllabus</string>
+        <string name="syllabusreport">Syllabus Report</string>
+
+        <string name="syllabussubjects">Subjects</string>
+        <string name="registrationdetails">Registration Details</string>
+
+        <string name="reports">Reports</string>
+
+
+        <string name="composemessage">Compose Message</string>
+        <string name="messagesubject">Message Subject</string>
+
+        <string name="exam_from">From</string>
+        <string name="exam_to">To</string>
+        <string name="attendence_absent">Absent</string>
+        <string name="attendance">Attendance</string>
+        <string name="attendancereport">Absentees</string>
+        <string name="calendar">Calendar</string>
+        <string name="contacts">Contacts</string>
+        <string name="concerns">Concerns</string>
+        <string name="suggestions">Suggestions</string>
+        <string name="continu">Continue</string>
+        <string name="documents">Documents</string>
+        <string name="exams">Exams</string>
+        <string name="scheduleresults">Schedule &amp; Results</string>
+        <string name="faculty">Faculty</string>
+        <string name="fees">Fees</string>
+        <string name="messages">Messages</string>
+        <string name="message">Message</string>
+        <string name="more">More</string>
+        <string name="attendancereport1">Attendance Report</string>
+        <string name="aboutschool">About School</string>
+        <string name="subjects">Subjects</string>
+        <string name="submit">Submit</string>
+        <string name="syllabusstatus">Syllabus</string>
+        <string name="timetable">Timetable</string>
+        <string name="timetablenotavailable">Timetable not available</string>
+        <string name="composeemail">Compose</string>
+        <string name="totalclasses">Total Classes</string>
+        <string name="addressed">Addressed</string>
+        <string name="ignored">Ignored</string>
+        <string name="new1">New</string>
+        <string name="leaveapplication">Leave Application</string>
+        <string name="appointmentrequest">Appointment Request</string>
+        <string name="needattention">Need Attention</string>
+        <string name="composemessagecontent">Please enter Subject and Message content</string>
+
+
+        <string name="weeknames_mon">Monday</string>
+        <string name="weeknames_tue">Tuesday</string>
+        <string name="weeknames_wed">Wednesday</string>
+        <string name="weeknames_thu">Thursday</string>
+        <string name="weeknames_fri">Friday</string>
+        <string name="weeknames_sat">Saturday</string>
+        <string name="send">Send</string>
+        <string name="recall">Recall</string>
+        <string name="weeknames_sun">Sunday</string>
+
+        <string name="number_zero">0</string>
+        <string name="number_one">1</string>
+        <string name="number_two">2</string>
+        <string name="number_three">3</string>
+        <string name="number_four">4</string>
+        <string name="number_five">5</string>
+        <string name="number_six">6</string>
+        <string name="number_seven">7</string>
+        <string name="number_eight">8</string>
+        <string name="number_nine">9</string>
+        <string name="btn_clear">Clear</string>
+        <string name="btn_backspace">Back</string>
+        <string name="title_activity_parent_student_home">ParentStudentHome</string>
+        <string name="open">Open</string>
+        <string name="share">Share</string>
+        <string name="title_activity_teacher_multi_school">TeacherMultiSchoolActivity</string>
+
+
+</resources>

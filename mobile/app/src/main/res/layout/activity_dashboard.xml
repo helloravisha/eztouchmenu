@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/menu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanglelayout"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center|top"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/personaletails_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="13dp"
+                                android:src="@drawable/bookcolor"
+                                android:tag="bg1" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/personaletails_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/background_3"
+                            android:gravity="center"
+                            android:text="Menu"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/more_icon_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/orders"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanglelayout"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center|top"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+
+                            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/attendance_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/attendancecolor"
+                                android:tag="bg1" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/attendance_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/background_3"
+                            android:gravity="center"
+                            android:text="Orders"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/more_icon_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/timing"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanglelayout"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center|top"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/timetable_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/timetablecolor"
+                                android:tag="bg1" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/timetable_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/background_3"
+                            android:gravity="center"
+                            android:text="Timing"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/more_icon_small" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/waiter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanglelayout"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center|top"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/faculty_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/facultyprofile"
+                                android:tag="bg1" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/faculty_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/background_3"
+                            android:gravity="center"
+                            android:text="Waiter"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/more_icon_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanglelayout"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center|top"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/feepayment_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/feescolor"
+                                android:tag="bg1" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/feepayment_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/background_3"
+                            android:gravity="center"
+                            android:text="Bill"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contacts"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectanglelayout"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center|top"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/calendar_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:src="@drawable/contactscolor"
+                                android:tag="bg1" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/calender_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/background_3"
+                            android:gravity="center"
+                            android:text="contact"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/more_icon_small" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

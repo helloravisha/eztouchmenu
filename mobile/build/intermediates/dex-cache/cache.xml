@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.4/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="88ccdbf844995d5c9c845e087068d27588b2d026">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-0fad4dd8108e4232eb0b328cd0145549a0a0eb2b.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-df965607f03e4f4e08bd46dfa45601ebb190f5dc.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-958f0aa6548528c937cf253367fe6aefc78c8c62.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-d6d888132f433c48cbcb6f0ef69f5de88bcb1bba.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/library-1.0.19-29398a34e5473b52464744c6062aeb248a58d9a8.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-e329f6e5306f25169e28c111b8732c13f98df1b8.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-3a970e4f55a53d535afdffe62807e524bfc9e038.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-f8a3e9fc008aa30bb21557d99f83f868406f6eaf.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-a0372a01d7a7b3539008ae6b0a1af361817bd9a9.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-3b890e740cb5c1e473893b03d21eaeb68a33b345.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-01fc5afe8f59e09b83b82470294dc0661403b08f.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-07e95f833b70a570df2a43b51ac3c685fdc2d9bd.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/eztouchmenu/app/build/intermediates/pre-dexed/debug/classes-7ab846ed2e944dcb0bc421091205e5c73f5c0dde.jar" />
+    </item>
+    <item
+        jar="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/ravisha/sjsu/Cloud/Mobile/Backup-BeforeMenu/eztouchmenu/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f6750c3dade921776bf3ad161c9861e9238f38f8.jar" />
+    </item>
+
+</items>
