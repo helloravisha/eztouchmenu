@@ -14,9 +14,10 @@ Customers want quality and good service. They don't want to wait around to order
     - [Web Module](#web-module)
     - [Mobile Module](#mobile-module)
 - [Demo](#demo)
-    - [Mobile Application](#mobile-application)
-    - [Order Management](#order-management)
+    - [Order Management Process](#order-management-process)
+    - [Order initiation from Chat Bots](#order-initiation-from-chat-bots)
     - [Menu Management](#menu-management)
+    - [Quicksight](#quicksight)
 - [Links](#links)
 
 ## Details
@@ -66,11 +67,42 @@ The purpose of this document is to explain the main idea of  EzmenuTouch. This d
 - Estimate the bill before confirming the order
 
 ## Demo
-### Mobile Application
+### Order Management Process
+**Step 1**: The customer's need to enter the authentication code or the table number in order to access the restaurant’s mobile application. 
+(screenshot of mobile’s first screen) 
 
-### Order Management
+**Step 2**: Customers can visualize various categories available in the Menu and can view the items with detail description and price. They can add the item to the order by selecting the ‘Add to Order’ button. 
+(screenshot of Item details screen with the ‘Add to Order’ button)
+
+**Step 3**: Customers can view their final order and confirm their order. Once they place the order, the status of the order is changed to “Placed” and instantly appended to the list of orders in the web application. 
+(screenshot of order details and confirm button in mobile)
+
+**Step 4**: The kitchen can see the complete details of the customer’s order and can respond to the order with the current status like “In Progress” while the chef prepares food, “Ready” when the food is prepared and “Served” when the ordered items are served to the customers.
+
+[![Response From the Kitchen Image](https://i.imgur.com/yl5uBws.png)](http://ezmenutouch.potobooth.com/)
+
+**Step 5**: The customers can track their order status at anytime after they have placed the order. 
+(screenshot of order status in mobile)
+
+### Order initiation from Chat Bots
 
 ### Menu Management
+**Step 1**: The Supervisor has the authentication to modify the menu categories and items. 
+[![Supervisor Menu Management Image](https://i.imgur.com/GTivxxC.png)](http://ezmenutouch.potobooth.com/)
+
+**Step 2**: The application is structured to perform complete CRUD (create, read, update and delete) both the categories and the items in the Menu. 
+[![Create new Item in the Menu](https://i.imgur.com/fDBJuql.png)](http://ezmenutouch.potobooth.com/)
+
+**Step 3**: The Supervisor can update the available items in the menu which dynamically reflects in the mobile application and in the Kitchen webapplication. 
+[![Supervisor update items](https://i.imgur.com/LYCINnt.png)](http://ezmenutouch.potobooth.com/)
+
+**Step 4**: A copy of the order details of all the tables will be provided to the Supervisor as well.
+[![Supervisor Orders Lis](https://i.imgur.com/W66IIb7.png)](http://ezmenutouch.potobooth.com/)
+
+### Quicksight
+
+**Step 1**: The manager can have access to the AWS quicksight service which provides a graphical analysis of the list of orders and their status. So that the manager can get notified if the ratio of orders that are not yet responded and can immediately acknowledge the kitchen or the customer about the situation. 
+[![QuickSight Graphical View](https://i.imgur.com/mcq4Yhl.png)](https://us-east-1.quicksight.aws.amazon.com)
 
 ## Links
 
