@@ -25,6 +25,7 @@ import com.ezmenutouch.constants.MenuConstants;
 import com.ezmenutouch.util.Util;
 import com.ezmenutouch.vo.Dish;
 import com.ezmenutouch.vo.FoodItem;
+import com.ezmenutouch.vo.OrderItem;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,7 @@ public class MyOrders extends FragmentActivity implements LoaderManager.LoaderCa
     Bundle movieBundle = new Bundle();
     private JasonMenuDataParser jasonMenuDataParser = new JasonMenuDataParser();
     private final String  URI = "content://com.ezmenutouch.contentprovider.MovieContentProvider/favmovies";
-    private ArrayList<Dish> favDishList = new ArrayList<Dish>();
+    private ArrayList<OrderItem> favDishList = new ArrayList<OrderItem>();
     private CursorLoader cursorLoader;
 
 
@@ -69,8 +70,12 @@ public class MyOrders extends FragmentActivity implements LoaderManager.LoaderCa
 
             }
         };
-
-        jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL,listener);
+        Bundle bundle=getIntent().getExtras();
+        String categoryId = "71"; // default category
+        if(bundle!=null){
+            categoryId = bundle.getString("menutype");
+        }
+        jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL+"/"+categoryId,listener);
 
         String sortOrder = intent.getStringExtra(String.valueOf(R.string.sortOrder));
 
@@ -78,14 +83,14 @@ public class MyOrders extends FragmentActivity implements LoaderManager.LoaderCa
         if(MenuConstants.FAV_MOVIES.equals(sortOrder  )  || !Util.haveNetworkConnection(getApplicationContext())  ){
             System.out.println("Checking for Fav Movies..");
             setTitle(MenuConstants.FAV_MOVIES);
-            jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL,listener);
+            jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL+"/"+categoryId,listener);
             //itemViewAdapter.setItemList(favDishList);
             ///jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL,null);
             /// recyclerView.setHasFixedSize(true);
         } else if(null == sortOrder){// if there is no option selcted, show Popular Movies
             setTitle(MenuConstants.POPULAR_MOVIES);
             //jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MOST_POPULAR_MOVIES_URL, listener);
-            jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL,listener);
+            jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL+"/"+categoryId,listener);
         }
         else{
 
@@ -96,7 +101,7 @@ public class MyOrders extends FragmentActivity implements LoaderManager.LoaderCa
             }else{
                 jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.HIGH_RATED_MOVIES_URL, listener);
             }*/
-            jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL,listener);
+            jasonMenuDataParser.makeJsonObjectRequest(MenuConstants.MENU_ITEMS_REST_URL+"/"+categoryId,listener);
         }
 
     }
@@ -114,7 +119,7 @@ public class MyOrders extends FragmentActivity implements LoaderManager.LoaderCa
         switch (item.getItemId()){
 
             case R.id.popular:
-                Intent i = new Intent(this,MenuActivity.class);
+                Intent i = new Intent(this,DashboardActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivityForResult(i, 0);
                 overridePendingTransition(0,0);
@@ -135,7 +140,7 @@ public class MyOrders extends FragmentActivity implements LoaderManager.LoaderCa
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            Dish dish = Util.cursorToFavMovie(cursor);
+            OrderItem dish = Util.cursorToFavOrder(cursor);
             favDishList.add(dish);
             cursor.moveToNext();
         }

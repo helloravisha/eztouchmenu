@@ -6,25 +6,32 @@ package com.ezmenutouch.vo;
 
 public class OrderItem {
 
-
-    int srno;
-    String name;
-    float price;
-    String orderDate;
-    String orderPlaced;
+    String itemId;
     String tableName;
-    String OrderStatus;
-    String orderId;
+    String itemPrice;
+    String orderStatus;
+    String orderdate;
+    String itemName;
 
+    public OrderItem(){
 
+    }
 
-    public OrderItem(int srno, String name, float price, String orderDate, String orderPlaced, String tableName) {
-        this.srno = srno;
-        this.name = name;
-        this.price = price;
-        this.orderDate = orderDate;
-        this.orderPlaced = orderPlaced;
+    public OrderItem(String itemId, String tableName, String itemPrice, String orderStatus, String orderdate, String itemName) {
+        this.itemId = itemId;
         this.tableName = tableName;
+        this.itemPrice = itemPrice;
+        this.orderStatus = orderStatus;
+        this.orderdate = orderdate;
+        this.itemName = itemName;
+    }
+
+    public String getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
     }
 
     public String getTableName() {
@@ -35,51 +42,35 @@ public class OrderItem {
         this.tableName = tableName;
     }
 
-
-
-    public OrderItem(){
-
+    public String getItemPrice() {
+        return itemPrice;
     }
 
-
-
-    public int getSrno() {
-        return srno;
+    public void setItemPrice(String itemPrice) {
+        this.itemPrice = itemPrice;
     }
 
-    public void setSrno(int srno) {
-        this.srno = srno;
+    public String getOrderStatus() {
+        return orderStatus;
     }
 
-    public String getName() {
-        return name;
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getOrderdate() {
+        return orderdate;
     }
 
-    public float getPrice() {
-        return price;
+    public void setOrderdate(String orderdate) {
+        this.orderdate = orderdate;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
+    public String getItemName() {
+        return itemName;
     }
 
-    public String getOrderDate() {
-        return orderDate;
-    }
-
-    public void setOrderDate(String orderDate) {
-        this.orderDate = orderDate;
-    }
-
-    public String getOrderPlaced() {
-        return orderPlaced;
-    }
-
-    public void setOrderPlaced(String orderPlaced) {
-        this.orderPlaced = orderPlaced;
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
     }
 }

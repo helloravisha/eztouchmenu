@@ -64,7 +64,7 @@ public class DetailedDishTabActivity extends FragmentActivity implements MenuLis
     public void setDish(Dish dish) {
         this.dish = dish;
         DetailedMenuFragment detailedMenuFragment = (DetailedMenuFragment)getSupportFragmentManager().findFragmentById(R.id.detailedMovieFragment);
-        // detailedMenuFragment.updateMovieInfo(dish);
+        //detailedMenuFragment.updateMovieInfo(dish);
 
 
     }

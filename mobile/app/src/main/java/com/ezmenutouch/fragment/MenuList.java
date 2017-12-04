@@ -25,6 +25,7 @@ import com.ezmenutouch.util.OnRequestCompletedListener;
 import com.ezmenutouch.util.Util;
 import com.ezmenutouch.vo.Dish;
 import com.ezmenutouch.vo.FoodItem;
+import com.ezmenutouch.vo.OrderItem;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,7 @@ public class MenuList extends Fragment implements LoaderManager.LoaderCallbacks<
     MenuDAO menuDAO = null;
     View view = null;
     private final String  URI = "content://com.ezmenutouch.contentprovider.MovieContentProvider/favmovies";
-    private ArrayList<Dish> favDishList = new ArrayList<Dish>();
+    private ArrayList<OrderItem> favDishList = new ArrayList<OrderItem>();
     private CursorLoader cursorLoader;
 
 
@@ -61,7 +62,7 @@ public class MenuList extends Fragment implements LoaderManager.LoaderCallbacks<
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            Dish dish = Util.cursorToFavMovie(cursor);
+            OrderItem dish = Util.cursorToFavOrder(cursor);
             favDishList.add(dish);
             cursor.moveToNext();
         }

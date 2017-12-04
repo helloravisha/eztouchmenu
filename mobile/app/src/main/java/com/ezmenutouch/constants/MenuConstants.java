@@ -5,7 +5,11 @@ public interface MenuConstants {
     String POPULAR_MOVIES = "Menu";
     String HIGH_RATED_MOVIES = "Menu";
     String FAV_MOVIES = "Menu";
-    String MENU_ITEMS_REST_URL = "https://ip26hxunoh.execute-api.us-east-1.amazonaws.com/dev/items";
+   // String MENU_ITEMS_REST_URL = "https://ip26hxunoh.execute-api.us-east-1.amazonaws.com/dev/items";
+    String MENU_ITEMS_REST_URL = "https://ip26hxunoh.execute-api.us-east-1.amazonaws.com/dev/categories";
+    String ORDER_ITEMS_REST_URL = "https://ip26hxunoh.execute-api.us-east-1.amazonaws.com/dev/orders/";
+    String ORDER_ITEMS_STATUS_REST_URL = "https://ip26hxunoh.execute-api.us-east-1.amazonaws.com/dev/orders/tables/";
+
 
     String MOVIEDB_URL_PREFIX = "http://api.themoviedb.org/3/";
     String API_KEY = "?api_key=a6788f0e05197c7bcdff747e397dd62d";

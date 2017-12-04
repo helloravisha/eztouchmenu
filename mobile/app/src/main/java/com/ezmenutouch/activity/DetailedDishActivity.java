@@ -23,6 +23,7 @@ import com.ezmenutouch.util.MenuParser;
 import com.ezmenutouch.util.Util;
 import com.ezmenutouch.vo.Dish;
 import com.ezmenutouch.vo.FoodVideo;
+import com.ezmenutouch.vo.OrderItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +36,7 @@ public class DetailedDishActivity extends FragmentActivity implements ItemVideo.
 
     private MenuParser menuParser = new MenuParser();
     private final String  URI = "content://com.ezmenutouch.contentprovider.MovieContentProvider/favmovies";
-    private List<Dish> dishList = new ArrayList<Dish>();
+    private List<OrderItem> dishList = new ArrayList<OrderItem>();
     private CursorLoader cursorLoader;
 
     Bundle movieBundle = new Bundle();
@@ -90,8 +91,8 @@ public class DetailedDishActivity extends FragmentActivity implements ItemVideo.
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            Dish dish = Util.cursorToFavMovie(cursor);
-            System.out.println("Dish info.."+ dish.getTitle());
+            OrderItem dish = Util.cursorToFavOrder(cursor);
+            //System.out.println("Dish info.."+ dish.getTitle());
             dishList.add(dish);
             cursor.moveToNext();
         }
@@ -100,7 +101,7 @@ public class DetailedDishActivity extends FragmentActivity implements ItemVideo.
 
     }
 
-    public List<Dish> getDishList(){
+    public List<OrderItem> getDishList(){
         return dishList;
     }
 

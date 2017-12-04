@@ -5,9 +5,11 @@ package com.ezmenutouch.constants;
  */
 
 public interface OrderAttributes {
-    String SR_NO ="srno";
-    String NAME = "name";
-    String PRICE = "price";
+    String ITEM_ID ="itemId";
+    String TABLE_NAME = "tableName";
+    String ITEM_PRICE = "itemPrice";
+    String ORDER_STATUS = "orderStatus";
     String ORDER_DATE = "orderdate";
-    String ORDER_PLACED = "orderplaced";
+    String ITEM_NAME = "itemName";
+
 }

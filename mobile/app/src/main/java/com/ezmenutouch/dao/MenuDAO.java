@@ -22,11 +22,8 @@ public class MenuDAO {
   private SQLiteDatabase database;
   private MySQLiteHelper dbHelper;
 
-
-
-
   private String[] allColumns = {
-          OrderAttributes.SR_NO, OrderAttributes.NAME,OrderAttributes.PRICE,OrderAttributes.ORDER_DATE, OrderAttributes.ORDER_PLACED};
+          OrderAttributes.ITEM_ID, OrderAttributes.TABLE_NAME,OrderAttributes.ORDER_DATE,OrderAttributes.ITEM_PRICE, OrderAttributes.ORDER_STATUS,OrderAttributes.ITEM_NAME};
 
   public MenuDAO(Context context) {
     dbHelper = new MySQLiteHelper(context);
@@ -56,43 +53,46 @@ public class MenuDAO {
     return database;
   }
 
-  public OrderItem getMovie(OrderItem orderItem){
-    String getMovie = "SELECT  * FROM ORDER WHERE SRNO";
-    getMovie += orderItem.getSrno();
-    Cursor cursor = database.rawQuery(getMovie, null);
-    cursor.moveToFirst();
-    if (!cursor.isAfterLast()) {
-      return cursorToFavOrder(cursor);
-    }
-    return null;
-
-  }
 
 
-  private static final String ORDER_TABLE = "create table order(srno integer,name text,price real,orderdate text,orderplaced text);";
 
   public long  insertOrder(OrderItem orderItem) {
     ContentValues values = new ContentValues();
-    values.put(OrderAttributes.SR_NO, orderItem.getSrno());
-    values.put(OrderAttributes.NAME, orderItem.getName());
-    values.put(OrderAttributes.ORDER_DATE, orderItem.getOrderDate());
-    values.put(OrderAttributes.ORDER_PLACED, orderItem.getOrderPlaced());
-    values.put(OrderAttributes.PRICE, orderItem.getPrice());
-    return database.insert("order", null,
+    values.put(OrderAttributes.ITEM_ID, orderItem.getItemId());
+    values.put(OrderAttributes.TABLE_NAME, orderItem.getTableName());
+    values.put(OrderAttributes.ORDER_DATE, orderItem.getOrderdate());
+    values.put(OrderAttributes.ITEM_PRICE, orderItem.getItemPrice());
+    values.put(OrderAttributes.ORDER_STATUS, orderItem.getOrderStatus());
+    values.put(OrderAttributes.ITEM_NAME, orderItem.getItemName());
+    return database.insert("orders", null,
             values);
   }
 
 
-  public void deleteOrder(FoodItem foodItem) {
-    String name  = foodItem.getName();
-    database.delete("order", name
+  public void deleteOrder(OrderItem foodItem) {
+    String name  = foodItem.getTableName();
+    database.delete("orders", name
             + " = " + name, null);
   }
+
+  public void deleteAllOrder() {
+    ArrayList<OrderItem> orderedItemsInfo =  getAllOrders();
+
+    for (OrderItem orders: orderedItemsInfo
+            ) {
+      String name  = orders.getTableName();
+      database.delete("orders", name
+              + " = " + name, null);
+      break;
+    }
+  }
+
+
 
   public ArrayList<OrderItem> getAllOrders() {
     ArrayList<OrderItem> orderItemList = new ArrayList<OrderItem>();
 
-    Cursor cursor = database.query("order",
+    Cursor cursor = database.query("orders",
             allColumns, null, null, null, null, null);
     cursor.moveToFirst();
     while (!cursor.isAfterLast()) {
@@ -108,32 +108,34 @@ public class MenuDAO {
 
   private OrderItem cursorToFavOrder(Cursor cursor) {
     OrderItem orderItem = new OrderItem();
-    orderItem.setSrno(cursor.getInt(0));
-    orderItem.setName(cursor.getString(1));
-    orderItem.setPrice(cursor.getFloat(2));
-    orderItem.setOrderDate(cursor.getString(3));
-    orderItem.setOrderPlaced(cursor.getString(4));
+    orderItem.setItemId(cursor.getString(0));
+    orderItem.setTableName(cursor.getString(1));
+    orderItem.setOrderdate(cursor.getString(2));
+    orderItem.setItemPrice(cursor.getString(3));
+    orderItem.setOrderStatus(cursor.getString(4));
+    orderItem.setItemName(cursor.getString(5));
+
     return orderItem;
   }
 
 
   public static class MySQLiteHelper extends SQLiteOpenHelper {
 
-    public static final String TABLE_FAVOURITE = "movie";
+    public static final String TABLE_FAVOURITE = "orders";
 
 
-    private static final String DATABASE_NAME = "movie.db";
+    private static final String DATABASE_NAME = "orders.db";
     private static final int DATABASE_VERSION = 1;
 
 
-
+    private static final String ORDER_TABLE = "create table orders ( "+ OrderAttributes.ITEM_ID+" text,"+OrderAttributes.TABLE_NAME+" text,"+OrderAttributes.ORDER_DATE+" text,"
+            +OrderAttributes.ITEM_PRICE+" text,"+OrderAttributes.ORDER_STATUS+" text,"+OrderAttributes.ITEM_NAME+" text);";
 
 
     // Table creation sql statement
 
 
 
-    private static final String ORDER_TABLE = "create table order(srno integer,name text,price real,orderdate text,orderplaced text);";
 
 
 
@@ -152,7 +154,7 @@ public class MenuDAO {
       Log.w(MySQLiteHelper.class.getName(),
               "Upgrading database from version " + oldVersion + " to "
                       + newVersion + ", which will destroy all old data");
-      db.execSQL("DROP TABLE IF EXISTS " + "order");
+      db.execSQL("DROP TABLE IF EXISTS " + "orders");
       onCreate(db);
     }
 

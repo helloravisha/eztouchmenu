@@ -3,6 +3,7 @@ package com.ezmenutouch.fragment;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,14 +15,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ezmenutouch.R;
+import com.ezmenutouch.activity.DashboardActivity;
+import com.ezmenutouch.activity.MenuTypeActivity;
+import com.ezmenutouch.activity.PolyVoiceActivity;
+import com.ezmenutouch.constants.DashBoardConstants;
 import com.ezmenutouch.constants.MenuConstants;
 import com.ezmenutouch.dao.MenuDAO;
+import com.ezmenutouch.util.JasonMenuDataParser;
 import com.ezmenutouch.util.JasonMenuUtil;
 import com.ezmenutouch.util.MenuParser;
 import com.ezmenutouch.util.OnRequestCompletedGenericListener;
+import com.ezmenutouch.util.SharedPreferenceUtil;
 import com.ezmenutouch.vo.FoodItem;
+import com.ezmenutouch.vo.OrderItem;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -36,7 +47,8 @@ public class ItemVideo extends Fragment implements View.OnClickListener {
 
     TextView txtOverview = null;
     Button btnFavourite = null;
-
+    Button btnMyOrders = null;
+    Button btnBackToMenu = null;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -74,6 +86,8 @@ public class ItemVideo extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -104,7 +118,7 @@ public class ItemVideo extends Fragment implements View.OnClickListener {
         Picasso.with(getActivity()).load(foodItem.getImagePath()).error(R.drawable.noposter).resize(300, 400)
                 .into(movieImageView);
         TextView price = ( TextView )view.findViewById(R.id.price);
-        price.setText(foodItem.getPrice());
+        price.setText("$ "+foodItem.getPrice()+"0");
         TextView overview = ( TextView )view.findViewById(R.id.overview);
         overview.setText(foodItem.getDescription().trim());
        // overview.setMovementMethod(new ScrollingMovementMethod());
@@ -113,12 +127,39 @@ public class ItemVideo extends Fragment implements View.OnClickListener {
         Button title = ( Button )view.findViewById(R.id.title);
         title.setText(foodItem.getName());
         txtOverview = (TextView)view.findViewById(R.id.overview);
+
+        btnMyOrders = (Button)view.findViewById(R.id.btnMyOrders);
+        btnBackToMenu  = (Button)view.findViewById(R.id.btnBackToMenu);
+
+        btnMyOrders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(),MenuTypeActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivityForResult(i, 0);
+                //overridePendingTransition(0,0);
+            }
+        });
+
+        btnBackToMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(),DashboardActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivityForResult(i, 0);
+                //overridePendingTransition(0,0);
+            }
+        });
+
+
+
         /*
         if (menuDao.getMovie(dish) != null ){
             btnFavourite.setText(MenuConstants.DELETE_FAVOURITE);
         }else{
             btnFavourite.setText(MenuConstants.ADD_FAVOURITE);
         }*/
+
         btnFavourite.setOnClickListener(this);
     }
 
@@ -181,12 +222,27 @@ public class ItemVideo extends Fragment implements View.OnClickListener {
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
         dialog.setCancelable(false);
-        dialog.setTitle("Dialog on Android");
-        dialog.setMessage("Are you sure you want to delete this entry? Are you sure you want to delete this entry? Are you sure you want to delete this entry?Are you sure you want to delete this entry?Are you sure you want to delete this entry?Are you sure you want to delete this entry?Are you sure you want to delete this entry?Are you sure you want to delete this entry?" );
-        dialog.setPositiveButton("Order", new DialogInterface.OnClickListener() {
+        dialog.setTitle("Order");
+        dialog.setMessage("Add to order :  "+foodItem.getName());
+        dialog.setPositiveButton("Add", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
-                //Action for "Delete".
+
+               String tableName =  SharedPreferenceUtil.getSharedPreferenceString(getActivity(), DashBoardConstants.PREFS_NAME, DashBoardConstants.TABLE_NAME,"500");;
+               String itemPrice = foodItem.getPrice();
+               String itemId = foodItem.getId();
+                String orderStatus = "Placed";
+                String orderdate =  new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+
+                String itemName = foodItem.getName();
+               menuDao.insertOrder(new OrderItem(itemId,tableName,itemPrice,orderStatus,orderdate,itemName));
+                ArrayList<OrderItem> orderedItemsInfo =  menuDao.getAllOrders();
+                for (OrderItem orders: orderedItemsInfo
+                     ) {
+                    System.out.println("orders.."+orders.getTableName());
+                }
+
+               // JasonMenuDataParser.placeOrder("ravisha");
             }
         })
                 .setNegativeButton("Cancel ", new DialogInterface.OnClickListener() {

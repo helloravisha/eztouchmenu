@@ -15,6 +15,7 @@
         android:layout_height="1000dp"
         tools:layout="@layout/fragment_food_list"
         android:layout_alignParentStart="true" />
+
     <fragment android:name="com.ezmenutouch.fragment.DetailedMenuFragment"
         android:id="@+id/detailedMovieFragment"
         android:layout_weight="1"

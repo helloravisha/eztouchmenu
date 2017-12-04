@@ -21,6 +21,7 @@ import com.ezmenutouch.R;
 import com.ezmenutouch.util.Util;
 import com.ezmenutouch.vo.Dish;
 import com.ezmenutouch.vo.FoodItem;
+import com.ezmenutouch.vo.OrderItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,7 @@ public class DetailedMenuFragment extends Fragment implements ItemVideo.OnFragme
     private static final String ARG_PARAM2 = "param2";
     private VideoFragment trailers = null;
     private final String  URI = "content://com.ezmenutouch.contentprovider.MovieContentProvider/favmovies";
-    private List<Dish> dishList = new ArrayList<Dish>();
+    private List<OrderItem> dishList = new ArrayList<OrderItem>();
     private CursorLoader cursorLoader = null;
 
     private ShareActionProvider mShareActionProvider;
@@ -160,7 +161,7 @@ public class DetailedMenuFragment extends Fragment implements ItemVideo.OnFragme
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            Dish dish = Util.cursorToFavMovie(cursor);
+            OrderItem dish = Util.cursorToFavOrder(cursor);
             dishList.add(dish);
             cursor.moveToNext();
         }

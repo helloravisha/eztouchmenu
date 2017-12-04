@@ -6,6 +6,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 import com.ezmenutouch.vo.Dish;
+import com.ezmenutouch.vo.OrderItem;
 
 
 public class Util {
@@ -28,17 +29,16 @@ public class Util {
     }
 
 
-    public static Dish cursorToFavMovie(Cursor cursor) {
-        Dish dish = new Dish();
-        dish.setMovieId(cursor.getInt(0));
-        dish.setLanguage(cursor.getString(6));
-        dish.setPopularity(cursor.getDouble(8));
-        dish.setBackdropPath(cursor.getString(7));
-        dish.setVoteCount(cursor.getInt(5));
-        dish.setVoteAverage(cursor.getDouble(4));
-        dish.setTitle(cursor.getString(1));
-        dish.setReleaseDate(cursor.getString(2));
-        dish.setOverview(cursor.getString(3));
-        return dish;
+    public static  OrderItem cursorToFavOrder(Cursor cursor) {
+        OrderItem orderItem = new OrderItem();
+        orderItem.setItemId(cursor.getString(0));
+        orderItem.setTableName(cursor.getString(1));
+        orderItem.setOrderdate(cursor.getString(2));
+        orderItem.setItemPrice(cursor.getString(3));
+        orderItem.setOrderStatus(cursor.getString(4));
+        orderItem.setItemName(cursor.getString(5));
+
+
+        return orderItem;
     }
 }

@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <application
         android:name=".util.AppController"
         android:allowBackup="true"
@@ -47,7 +47,13 @@
             android:multiprocess="true" />
 
         <activity android:name=".activity.MenuActivity" />
-        <activity android:name=".activity.DashboardActivity"></activity>
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".activity.PolyVoiceActivity" />
+        <activity android:name=".activity.MenuTypeActivity" />
+        <activity android:name=".activity.MenuCardActivity" />
+        <activity android:name=".activity.TextActivity" />
+        <activity android:name=".activity.InteractiveVoiceActivity" />
+        <activity android:name=".activity.MainActivity"></activity>
     </application>
 
 </manifest>
