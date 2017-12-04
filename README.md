@@ -1,4 +1,5 @@
-Eztouchmenu
+[![Logo](https://i.imgur.com/hgm3Bei.png)](http://ezmenutouch.com)
+Eztouchmenu 
 ==================
 [![Build Status](https://travis-ci.org/lil-boat/playtest-set-game.svg?branch=development)](http://54.183.149.36:8080/job/ezmenutouch/)
 
