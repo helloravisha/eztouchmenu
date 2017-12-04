@@ -1,7 +1,5 @@
-[![Logo](https://i.imgur.com/hgm3Bei.png)](http://ezmenutouch.com)
-Eztouchmenu 
+# Eztouchmenu     [![Build Status](https://travis-ci.org/lil-boat/playtest-set-game.svg?branch=development)](http://54.183.149.36:8080/job/ezmenutouch/)   [![Logo](https://i.imgur.com/hgm3Beit.png)](http://ezmenutouch.com)
 ==================
-[![Build Status](https://travis-ci.org/lil-boat/playtest-set-game.svg?branch=development)](http://54.183.149.36:8080/job/ezmenutouch/)
 
 Eztouchmenu has been designed to address many of the difficulties encountered by both the business owners and the customers  in the dining and entertainment industry.Business owner wants to maximize the revenues by providing quality products and a good and efficient service, all in all provide an enjoyable atmosphere for the customers.  
 Customers want quality and good service. They don't want to wait around to order, to receive their food, drink or the bill. They want to look through the menu at their leisure and make the best choice.Eztouchmenu is an interactive menu, visualized on a wireless or seamless LCD screen located on each table of the bar or restaurant, offering customers a full range of ordering and interactive entertainment services. This includes dynamic menu management and instant communication between the chef/kitchen and the customers. 
@@ -16,9 +14,13 @@ Customers want quality and good service. They don't want to wait around to order
     - [Mobile Module](#mobile-module)
 - [Demo](#demo)
     - [Order Management Process](#order-management-process)
-    - [Order initiation from Chat Bots](#order-initiation-from-chat-bots)
+    - [Chat Bots](#chat-bots)
     - [Menu Management](#menu-management)
     - [Quicksight](#quicksight)
+- [Pre requisites Set Up](#pre-requisites-set-up)
+    - [AWS Configuration](#aws-configuration)
+    - [Local Configuration](#local-configuration)
+- [Set up and run project](#set-up-and-run-project)
 - [Links](#links)
 
 ## Details
@@ -32,7 +34,7 @@ Customers want quality and good service. They don't want to wait around to order
 |Team | [Harini Balakrishnan](https://www.linkedin.com/in/harini-balakrishnan/) 
 |Team | [Ravi Katta](https://www.linkedin.com/in/harini-balakrishnan/)  
 |Team | [Rajalakshmi Babu](https://www.linkedin.com/in/harini-balakrishnan/) 
-|Team | [Sunder Thyagarajan](https://www.linkedin.com/in/harini-balakrishnan/)
+|Team | [Sunder Thyagarajan](https://www.linkedin.com/in/sunderthyagarajan/)
 
 ## Introduction
 Ezmenutouch is a Software-as-a-service cloud born application that has been designed to address many of the difficulties encountered by both the business owners and the customers in the dining and entertainment industry. In one hand the business owner wants to maximize the revenues by providing quality products and efficient service, all in all provide an enjoyable atmosphere for the customers. They may want to track the order details, build  and modify the menu dynamically. On the other hand, the customers want quality and good service as well. They don't want to wait around to place an order, get their order status or to receive their bill. They want to look through the menu at their leisure and make the best choice. 
@@ -82,7 +84,8 @@ Ezmenutouch makes the entire procedure is automated. Ezmenutouch has three modul
 **Step 5**: The customers can track their order status at anytime after they have placed the order. 
 (screenshot of order status in mobile)
 
-### Order initiation from Chat Bots
+### Chat Bots
+**step 1**: When the customer clicks on the waiter button, the application provides a flexibility to communicate with voice for any information.
 
 ### Menu Management
 **Step 1**: The Supervisor has the authentication to modify the menu categories and items. 
@@ -101,6 +104,25 @@ Ezmenutouch makes the entire procedure is automated. Ezmenutouch has three modul
 
 **Step 1**: The manager can have access to the AWS quicksight service which provides a graphical analysis of the list of orders and their status. So that the manager can get notified if the ratio of orders that are not yet responded and can immediately acknowledge the kitchen or the customer about the situation. 
 [![QuickSight Graphical View](https://i.imgur.com/mcq4Yhl.png)](https://us-east-1.quicksight.aws.amazon.com)
+
+## Pre requisites Set Up
+### AWS Configuration
+Need to setup various AWS services like EC2, ECS, ECR, Auto scaling, ELB, Lambda, CloudFront, S3,  S3 Static Web hosting, Route53, SNS, CloudWatch, Lex, Polly, Congnito, RDS, IAM, QuickSight, API Gateway.  
+
+### Local Configuration
+Need to setup Android Application SDK tool kit, Java, Angular4, NPM, WebStrom/Eclipse, Jenkins, Docker, Springboot.
+
+## Set up and run project
+- Need to install the android mobile application
+- Supervisor must login to the [Web application](http://ezmenutouch.com/) with credentials **Username**: Supervisor and **password**: Password.
+- Kitchen(chef) must login to the [Web application](http://ezmenutouch.potobooth.com/)with credentials **Username**: Kitchen and **password**: Password.
+Note: All this applications are deployed in cloud. So prefere to run it in the cloud
+
+### Locally: 
+- Need to clone the web module from [Github](https://github.com/CMPE281Cloud/eztouchmenu) and run it in Webstrom with npm.
+- Need to clone the mobile module from [Github](https://github.com/CMPE281Cloud/eztouchmenu) and run it with android SDK.
+- Need to clone the server module from [Github](https://github.com/CMPE281Cloud/eztouchmenu) and run it in tomcat server.
+- Need to  clone the test module from [Github](https://github.com/CMPE281Cloud/eztouchmenu) and run it in Eclipse with maven.
 
 ## Links
 
