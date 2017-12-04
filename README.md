@@ -69,20 +69,20 @@ Ezmenutouch makes the entire procedure is automated. Ezmenutouch has three modul
 ## Demo
 ### Order Management Process
 **Step 1**: The customer's need to enter the authentication code or the table number in order to access the restaurant’s mobile application. 
-(screenshot of mobile’s first screen) 
+[Mobile app front page](https://i.imgur.com/YWfK6Ys.png)
 
 **Step 2**: Customers can visualize various categories available in the Menu and can view the items with detail description and price. They can add the item to the order by selecting the ‘Add to Order’ button. 
-(screenshot of Item details screen with the ‘Add to Order’ button)
+[Add to Order](https://i.imgur.com/ZU0sehD.png)
 
 **Step 3**: Customers can view their final order and confirm their order. Once they place the order, the status of the order is changed to “Placed” and instantly appended to the list of orders in the web application. 
-(screenshot of order details and confirm button in mobile)
+[Make order](https://i.imgur.com/jJn9Z2m.png)
 
 **Step 4**: The kitchen can see the complete details of the customer’s order and can respond to the order with the current status like “In Progress” while the chef prepares food, “Ready” when the food is prepared and “Served” when the ordered items are served to the customers.
 
 [![Response From the Kitchen Image](https://i.imgur.com/yl5uBws.png)](http://ezmenutouch.potobooth.com/)
 
 **Step 5**: The customers can track their order status at anytime after they have placed the order. 
-(screenshot of order status in mobile)
+[Order status](https://i.imgur.com/qDyBLYz.png)
 
 ### Chat Bots
 **step 1**: When the customer clicks on the waiter button, the application provides a flexibility to communicate with voice for any information.
