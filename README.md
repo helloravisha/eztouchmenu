@@ -23,18 +23,8 @@ Customers want quality and good service. They don't want to wait around to order
 - [Set up and run project](#set-up-and-run-project)
 - [Links](#links)
 
-## Details
 
-|Name | Detail|
-|---|---|
-| University | [SJSU UNIVERSITY]( http://www.sjsu.edu/) |
-| Course | [CLOUD TECHNOLOGIES](info.sjsu.edu/web-dbgen/catalog/courses/CMPE281.html)|
-|Professor| [Mr.SANJAY GARJE](https://www.linkedin.com/in/sanjaygarje/) |
-|ISA|[DIVYANKITHA Urs](https://www.linkedin.com/in/divyankithaurs/) |
-|Team | [Harini Balakrishnan](https://www.linkedin.com/in/harini-balakrishnan/) 
-|Team | [Ravi Katta](https://www.linkedin.com/in/ravi-shanker-katta/)  
-|Team | [Rajalakshmi Babu](https://www.linkedin.com/in/rajalakshmi-babu-79a100102/) 
-|Team | [Sunder Thyagarajan](https://www.linkedin.com/in/sunderthyagarajan/)
+
 
 ## Introduction
 Ezmenutouch is a Software-as-a-service cloud born application that has been designed to address many of the difficulties encountered by both the business owners and the customers in the dining and entertainment industry. In one hand the business owner wants to maximize the revenues by providing quality products and efficient service, all in all provide an enjoyable atmosphere for the customers. They may want to track the order details, build  and modify the menu dynamically. On the other hand, the customers want quality and good service as well. They don't want to wait around to place an order, get their order status or to receive their bill. They want to look through the menu at their leisure and make the best choice. 
